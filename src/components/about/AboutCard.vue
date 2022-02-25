@@ -38,9 +38,10 @@ export default {
 .pInGrid {
   font-family: "Volte", Arial, sans-serif;
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 100%;
   height: auto;
+  padding-top: 1vh;
   background-color: #c2d500;
 }
 </style>

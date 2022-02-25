@@ -2,7 +2,7 @@
   <div class="barTop">
     <div v-if="!isNowMobile">
       <div class="navbar">
-        <div class="navbarItem">
+        <div class="navbarItem" @click="routeTo('/')">
           <div class="specialCuzFirst">
             <img :src="logo" alt="logo">
           </div>
@@ -91,6 +91,12 @@ export default {
   },
   unmounted() {
     window.removeEventListener('resize', this.handleResize);
+  },
+  watch: {
+    $route(to, from) {
+      console.log('from', from);
+      console.log('to', to);
+    },
   },
 };
 </script>

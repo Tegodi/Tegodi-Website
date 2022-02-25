@@ -1,10 +1,16 @@
 <template>
   <div class="projekte">
-    <AboutCard text="Logo" :image="logo" />
-    <AboutCard text="Logo" :image="logo" />
-    <AboutCard text="Logo" :image="logo" />
-    <AboutCard text="Logo" :image="logo" />
-    <AboutCard text="Logo" :image="logo" />
+    <AboutCard
+      text="Projektaufbau und Teilaufbau"
+      :image="logo"
+      @click="pushTo('/about/projektaufbau')"/>
+    <AboutCard
+      text="Produkte und Services"
+      :image="logo"
+      @click="pushTo('/about/produkteservices')"/>
+    <AboutCard text="Verbindung mit anderen Projekten" :image="logo"/>
+    <AboutCard text="Tipps zu aktuellen Themen" :image="logo"/>
+    <AboutCard text="TEgoDI in english" :image="logo"/>
   </div>
 </template>
 
@@ -19,6 +25,11 @@ export default {
     return {
       logo,
     };
+  },
+  methods: {
+    pushTo(url) {
+      this.$router.push(url);
+    },
   },
 };
 </script>
