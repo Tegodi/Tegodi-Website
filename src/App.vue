@@ -1,52 +1,72 @@
 <template>
-  <div class="absTop">
-    <Bar/>
-    <router-view></router-view>
-    <Footer/>
-  </div>
+  <Bar/>
+  <router-view></router-view>
 </template>
 
 <script>
-import Bar from './components/navbar/Bar.vue';
-import Footer from './components/footer/Footer.vue';
+import Bar from './components/permanent/navbar/Bar.vue';
 
 export default {
   name: 'App',
-  components: {
-    Footer,
-    Bar,
-  },
+  components: { Bar },
+  methods: {},
 };
 </script>
 
 <style>
 @font-face {
   font-family: "Volte";
-  src: local("VolteRounded"), url("../public/fonts/VolteRounded-Bold.otf") format("opentype");
+  src: local("VolteRounded"),
+  url("../public/fonts/volte/VolteRounded-Bold.otf") format("opentype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Volte";
-  src: local("VolteRounded"), url("../public/fonts/VolteRounded-Light.otf") format("opentype");
+  src: local("VolteRounded"),
+  url("../public/fonts/volte/VolteRounded-Light.otf") format("opentype");
   font-weight: 100;
 }
 
 @font-face {
   font-family: "Volte";
-  src: local("VolteRounded"), url("../public/fonts/VolteRounded-Medium.otf") format("opentype");
+  src: local("VolteRounded"),
+  url("../public/fonts/volte/VolteRounded-Medium.otf") format("opentype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Volte";
-  src: local("VolteRounded"), url("../public/fonts/VolteRounded-Regular.otf") format("opentype");
+  src: local("VolteRounded"),
+  url("../public/fonts/volte/VolteRounded-Regular.otf") format("opentype");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Volte";
-  src: local("VolteRounded"), url("../public/fonts/VolteRounded-Semibold.otf") format("opentype");
+  src: local("VolteRounded"),
+  url("../public/fonts/volte/VolteRounded-Semibold.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Opensans";
+  src: local("Opensans"),
+  url("../public/fonts/opensans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Opensans";
+  src: local("Opensans"),
+  url("../public/fonts/opensans/OpenSans-Medium.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Volte";
+  src: local("VolteRounded"),
+  url("../public/fonts/volte/VolteRounded-Semibold.otf") format("opentype");
   font-weight: 400;
 }
 
@@ -58,10 +78,6 @@ export default {
 * {
   margin: 0;
   padding: 0;
-}
-
-.overflowManager > div {
-  padding-top: 5vh;
 }
 
 /* width */
