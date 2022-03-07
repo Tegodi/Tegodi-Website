@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import Landingpage from '../components/urls/landing/Landingpage.vue';
+import Projektaufbau from '../components/urls/projektaufbau/Projektaufbau.vue';
 
 const routes = [
   {
@@ -8,6 +9,12 @@ const routes = [
     name: 'TEgoDI',
     component: Landingpage,
     meta: { title: 'Tegodi' },
+  },
+  {
+    path: '/projektaufbau',
+    name: 'Projektaufbau',
+    component: Projektaufbau,
+    meta: { title: 'Projektaufbau' },
   },
 ];
 

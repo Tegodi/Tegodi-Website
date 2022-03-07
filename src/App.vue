@@ -1,19 +1,27 @@
 <template>
   <Bar/>
   <router-view></router-view>
+  <Footer />
 </template>
 
 <script>
 import Bar from './components/permanent/navbar/Bar.vue';
+import Footer from './components/permanent/footer/Footer.vue';
 
 export default {
   name: 'App',
-  components: { Bar },
+  components: { Footer, Bar },
   methods: {},
 };
 </script>
 
 <style>
+
+:root {
+  --tegodi-green: #c2d500;
+  --header-text-color: #555555
+}
+
 @font-face {
   font-family: "Volte";
   src: local("VolteRounded"),
@@ -82,7 +90,7 @@ export default {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0;
 }
 
 /* Track */
@@ -97,6 +105,6 @@ export default {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c2d500;
+  background: var(--tegodi-green);
 }
 </style>
