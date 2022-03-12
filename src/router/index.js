@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 
 import Landingpage from '../components/urls/landing/Landingpage.vue';
 import Projektaufbau from '../components/urls/projektaufbau/Projektaufbau.vue';
+import Helpdesk from '../components/urls/helpdesk/Helpdesk.vue';
 
 const routes = [
   {
@@ -15,6 +16,12 @@ const routes = [
     name: 'Projektaufbau',
     component: Projektaufbau,
     meta: { title: 'Projektaufbau' },
+  },
+  {
+    path: '/helpdesk',
+    name: 'Helpdesk',
+    component: Helpdesk,
+    meta: { title: 'Helpdesk' },
   },
 ];
 

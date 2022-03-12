@@ -2,17 +2,25 @@
   <div class="projektaufbauWrapper">
     <PseudoHeader />
     <Vision />
-    <p>Für die margin</p>
+    <MissionStatement />
+    <MissionStatementTexte />
   </div>
 </template>
 
 <script>
 import PseudoHeader from './components/PseudoHeader.vue';
 import Vision from './components/Vision.vue';
+import MissionStatement from './components/MissionStatement.vue';
+import MissionStatementTexte from './components/MissionStatementTexte.vue';
 
 export default {
   name: 'Projektaufbau',
-  components: { Vision, PseudoHeader },
+  components: {
+    MissionStatementTexte,
+    MissionStatement,
+    Vision,
+    PseudoHeader,
+  },
 };
 </script>
 

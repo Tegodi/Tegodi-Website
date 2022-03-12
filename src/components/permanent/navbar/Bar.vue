@@ -35,7 +35,7 @@ export default {
 
   width: 10vh;
   height: 10vh;
-  position: absolute;
+  position: fixed;
   background-color: white;
   border-radius: 50%;
   display: flex;

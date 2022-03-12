@@ -7,20 +7,20 @@
       </div>
     </div>
     <div class="actualContent">
-      <img :src="ablaufgrafik">
+      <Ablaufgrafik />
     </div>
   </div>
 </template>
 
 <script>
-import ablaufgrafik from '../../../../assets/ablauf.png';
 import g from '../../../../assets/goswoosh.png';
+import Ablaufgrafik from './Ablaufgrafik.vue';
 
 export default {
   name: 'PseudoHeader',
+  components: { Ablaufgrafik },
   data() {
     return {
-      ablaufgrafik,
       g,
     };
   },

@@ -29,8 +29,7 @@
         </g>
       </svg>
       <div class="childContent">
-        <p>Produkte</p>
-        <p>Services</p>
+        <p>Helpdesk</p>
       </div>
     </div>
     <div :style="styleForForeground(3)" @mouseenter="setActive(3)" ref="cont3">
