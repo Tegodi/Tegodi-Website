@@ -36,7 +36,7 @@ export default {
   width: 10vh;
   height: 10vh;
   position: fixed;
-  background-color: white;
+  background-color: var(--tegodi-green);
   border-radius: 50%;
   display: flex;
   align-items: center;

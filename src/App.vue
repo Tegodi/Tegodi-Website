@@ -1,5 +1,6 @@
 <template>
-  <Bar/>
+  <Bar v-if="$route.fullPath !== '/'"/>
+  <TerminDrawer v-if="$route.fullPath !== '/'"/>
   <router-view></router-view>
   <Footer />
 </template>
@@ -7,10 +8,11 @@
 <script>
 import Bar from './components/permanent/navbar/Bar.vue';
 import Footer from './components/permanent/footer/Footer.vue';
+import TerminDrawer from './components/permanent/TerminDrawer/TerminDrawer.vue';
 
 export default {
   name: 'App',
-  components: { Footer, Bar },
+  components: { TerminDrawer, Footer, Bar },
   methods: {},
 };
 </script>
@@ -19,7 +21,8 @@ export default {
 
 :root {
   --tegodi-green: #c2d500;
-  --header-text-color: #555555
+  --header-text-color: #5b6670;
+  --light-background: #a3a9af;
 }
 
 @font-face {

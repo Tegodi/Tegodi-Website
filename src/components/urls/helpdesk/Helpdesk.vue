@@ -1,25 +1,41 @@
 <template>
   <div class="helpdeskWrapper">
-    <div class="backButton">
-      <div class="backChevron">
-        <p>c</p>
-      </div>
-      <div class="locationTag">
-        <h2>Helpdesk</h2>
-      </div>
+    <BackButton title="Helpdesk" back-u-r-l="/" chevron-background="var(--light-background)" chevron-color="var(--tegodi-green)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" />
+    <div class="actualHelpdeskContent">
+      <VerticalField header="" background="var(--header-text-color)" :margin="8" :width="60" :width-of-left-border="7">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+          sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+          sanctus est Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+          sanctus est Lorem ipsum dolor sit amet.</p>
+      </VerticalField>
+      <VideoComponent />
+      <ContactField />
     </div>
-    <VerticalField header="Help" background="#141414" margin="5vh" :width="80">
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    </VerticalField>
   </div>
 </template>
 
 <script>
 import VerticalField from '../../permanent/shared/VerticalField.vue';
+import BackButton from '../../permanent/shared/BackButton.vue';
+import VideoComponent from './components/VideoComponent.vue';
+import ContactField from './components/ContactField.vue';
 
 export default {
   name: 'Helpdesk',
-  components: { VerticalField },
+  components: {
+    ContactField, VideoComponent, BackButton, VerticalField,
+  },
 };
 </script>
 
@@ -27,24 +43,17 @@ export default {
 .helpdeskWrapper {
   width: 100%;
   min-height: 90vh;
-}
-
-.backButton {
-  width: 20vw;
-  height: 7vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  grid-gap: 10vh;
+  margin-bottom: 5vh;
 }
 
-.backChevron {
-  height: 100%;
-  aspect-ratio: 1;
-  background-color: #c2d500;
-}
-
-.locationTag {
-  flex-grow: 1;
-  height: 100%;
-  background-color: #888888;
+.actualHelpdeskContent {
+  width: calc(100% - 30vh);
+  padding: 0 15vh;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10vh;
 }
 </style>

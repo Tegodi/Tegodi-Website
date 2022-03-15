@@ -1,13 +1,14 @@
 <template>
   <div class="footerTop">
-    <div class="footerThirds">
-
-    </div>
-    <div class="footerThirds" id="impDat">
+    <div class="footerThirds flexFooters" style="background-color: #d1e040">
       <p>Impressum</p>
       <p>Datenschutz</p>
     </div>
-    <div class="footerThirds" id="logosponsor">
+    <div class="footerThirds flexFooters" style="background-color: #848c94">
+      <p>Deutsch</p>
+      <p>Englisch</p>
+    </div>
+    <div class="footerThirds flexFooters" id="logosponsor" style="background-color: white">
       <img :src="bw">
     </div>
   </div>
@@ -30,7 +31,6 @@ export default {
 .footerTop {
   width: 100%;
   height: 10vh;
-  background-color: var(--tegodi-green);
   display: flex;
   flex-direction: row;
 }
@@ -40,7 +40,7 @@ export default {
   height: 100%;
 }
 
-#impDat {
+.flexFooters {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -48,13 +48,6 @@ export default {
   font-family: "Volte", serif;
   font-weight: 200;
   font-size: 1.0rem;
-}
-
-#logosponsor {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 #logosponsor > img {

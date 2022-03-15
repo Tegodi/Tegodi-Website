@@ -1,8 +1,8 @@
 <template>
-  <div class="griddify" :style="{width: width + '%', marginLeft: margin + '%'}">
+  <div class="griddify" :style="{width: width + 'vw', marginLeft: margin + '%'}">
     <div class="vertCardWrapper">
       <div class="rotateVertCardHeader">
-        <div class="rotateFill" :style="{backgroundColor: background}">
+        <div class="rotateFill" :style="{backgroundColor: background, width: `${widthOfLeftBorder}vw`}">
           <p>{{ header }}</p>
         </div>
       </div>
@@ -36,6 +36,10 @@ export default {
       required: true,
     },
     margin: {
+      type: Number,
+      required: true,
+    },
+    widthOfLeftBorder: {
       type: Number,
       required: true,
     },
@@ -110,7 +114,6 @@ export default {
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 5vw;
 }
 
 .missionStatementContent > p:first-child {

@@ -3,7 +3,8 @@
     header="Mission Statement"
     background="var(--header-text-color)"
     :width="60"
-    :margin="25">
+    :margin="25"
+    :width-of-left-border="5">
     <div class="missionStatementContent">
       <p>AP1</p>
       <p>Mit System die Ziele erreichen und dabei die Qualität nicht aus den Augen verlieren:
