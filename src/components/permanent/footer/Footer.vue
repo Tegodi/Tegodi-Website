@@ -1,33 +1,64 @@
 <template>
   <div class="footerTop">
     <div class="footerThirds flexFooters" style="background-color: #d1e040">
-      <p>Impressum</p>
-      <p>Datenschutz</p>
+      <p>{{ $t('footer.imprint') }}</p>
+      <p style="cursor: pointer" @click="$router.push('/datenschutz')">{{ $t('footer.data') }}</p>
     </div>
-    <div class="footerThirds flexFooters" style="background-color: #848c94">
-      <p>Deutsch</p>
-      <p>Englisch</p>
+    <div class="footerThirds" style="background-color: #848c94">
+      <div id="language">
+        <p :style="{textDecoration: checkLanguage('de') ? 'underline black' : 'none'}" style="cursor: pointer" @click="toggleLanguage('de')">{{ $t('footer.de') }}</p>
+        <p>|</p>
+        <p :style="{textDecoration: checkLanguage('en') ? 'underline black' : 'none'}" style="cursor: pointer" @click="toggleLanguage('en')">{{ $t('footer.en') }}</p>
+      </div>
     </div>
-    <div class="footerThirds flexFooters" id="logosponsor" style="background-color: white">
-      <img :src="bw">
+    <div id="logosponsor" class="footerThirds flexFooters" style="background-color: white">
+      <img :src="$root.$i18n.locale === 'de' ? bmbf : bmbfen">
+      <img :src="coli">
+      <img :src="ph">
     </div>
   </div>
 </template>
 
 <script>
-import bw from '../../../assets/logo_bw_ministerium.png';
+import bmbfen from '../../../assets/foerderung/BMBF_gefoerdert_2017_en.jpg';
+import bmbf from '../../../assets/foerderung/BMBF_gefördert vom_deutsch.jpg';
+import coli from '../../../assets/foerderung/logo-colilab-white-ph.png';
+import ph from '../../../assets/foerderung/PH-Signet-4c_mit_Rand.jpg';
 
 export default {
   name: 'Footer',
   data() {
     return {
-      bw,
+      bmbfen,
+      bmbf,
+      coli,
+      ph,
     };
+  },
+  methods: {
+    toggleLanguage(lang) {
+      this.$root.$i18n.locale = lang;
+    },
+    checkLanguage(lang) {
+      return this.$root.$i18n.locale === lang;
+    },
   },
 };
 </script>
 
 <style scoped>
+#language {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  font-family: 'Volte', serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  grid-gap: 2ch;
+  justify-content: space-evenly;
+}
+
 .footerTop {
   width: 100%;
   height: 10vh;
@@ -53,5 +84,21 @@ export default {
 #logosponsor > img {
   width: auto;
   height: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+  .language {
+
+  }
+
+  .footerTop {
+    flex-direction: column;
+    height: 24vh;
+  }
+
+  .footerThirds {
+    width: 100%;
+    height: 8vh;
+  }
 }
 </style>

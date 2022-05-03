@@ -1,23 +1,20 @@
 <template>
   <div class="helpdeskWrapper">
-    <BackButton title="Helpdesk" back-u-r-l="/" chevron-background="var(--light-background)" chevron-color="var(--tegodi-green)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" />
+    <BackButton back-u-r-l="/" chevron-background="var(--light-background)" chevron-color="var(--tegodi-green)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" title="Helpdesk" />
     <div class="actualHelpdeskContent">
-      <VerticalField header="" background="var(--header-text-color)" :margin="8" :width="60" :width-of-left-border="7">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          sanctus est Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          sanctus est Lorem ipsum dolor sit amet.</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-          sanctus est Lorem ipsum dolor sit amet.</p>
+      <VerticalField :margin="8" :width="60" :width-of-left-border="4" background="var(--header-text-color)" header="">
+        <p>{{ $t('helpdesk.contact.firstText') }}</p>
+        <div>
+          <p>{{ $t('helpdesk.contact.partHeader') }}</p>
+          <ul style="margin-left: 3vw">
+            <li>{{$t('helpdesk.contact.parts[0]')}}</li>
+            <li>{{$t('helpdesk.contact.parts[1]')}}</li>
+            <li>{{$t('helpdesk.contact.parts[2]')}}</li>
+            <li>{{$t('helpdesk.contact.parts[3]')}}</li>
+          </ul>
+          <p>{{ $t('helpdesk.contact.partBottom') }}</p>
+        </div>
+        <p>{{ $t('helpdesk.contact.partEnd') }}</p>
       </VerticalField>
       <VideoComponent />
       <ContactField />

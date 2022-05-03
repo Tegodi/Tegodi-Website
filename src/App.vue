@@ -1,19 +1,31 @@
 <template>
-  <Bar v-if="$route.fullPath !== '/'"/>
+  <!--Bar v-if="$route.fullPath !== '/'"/-->
   <TerminDrawer v-if="$route.fullPath !== '/'"/>
   <router-view></router-view>
-  <Footer />
+  <Footer/>
 </template>
 
 <script>
-import Bar from './components/permanent/navbar/Bar.vue';
+// import Bar from './components/permanent/navbar/Bar.vue';
 import Footer from './components/permanent/footer/Footer.vue';
-import TerminDrawer from './components/permanent/TerminDrawer/TerminDrawer.vue';
+import TerminDrawer from './components/permanent/terminDrawer/TerminDrawer.vue';
 
 export default {
   name: 'App',
-  components: { TerminDrawer, Footer, Bar },
-  methods: {},
+  components: {
+    TerminDrawer,
+    Footer,
+  },
+  methods: {
+    async fetchData() {
+      const f = await fetch('/termine.json');
+      const j = await f.json();
+      console.log(j);
+    },
+  },
+  mounted() {
+    this.fetchData();
+  },
 };
 </script>
 
@@ -91,7 +103,6 @@ export default {
   padding: 0;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 0;
 }

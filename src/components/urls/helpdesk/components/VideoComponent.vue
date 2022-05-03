@@ -1,28 +1,38 @@
 <template>
   <div class="videoComponentWrapper">
-    <video src="https://www.w3schools.com/html/mov_bbb.mp4" autoplay muted controls />
-    <img src="https://www.moopaed.de/wp-content/uploads/2018/01/moopaed_logo.jpg" />
+    <img :src="desk" class="image"/>
+    <img :src="logo" />
   </div>
 </template>
 
 <script>
+import logo from '../../../../assets/Moopaed_logo.jpg';
+import desk from '../../../../assets/Helpdesk_Banner_mit_Schrift.jpg';
+
 export default {
   name: 'VideoComponent',
+  data() {
+    return {
+      logo,
+      desk,
+    };
+  },
 };
 </script>
 
 <style scoped>
 .videoComponentWrapper {
-  width: 100%;
-  height: 60vh;
+  margin: 0 10vw;
+  width: calc(100% - 20vw);
+  height: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.videoComponentWrapper > video {
-  height: 100%;
+.image {
+  height: 80%;
   width: auto;
 }
 </style>

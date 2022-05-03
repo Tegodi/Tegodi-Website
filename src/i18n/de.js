@@ -1,0 +1,47 @@
+const de = {
+  landing: {
+    project: 'Projektaufbau',
+    parts: 'Teilaufbau',
+    helpdesk: 'Helpdesk',
+    moopaed: 'moopaed',
+    learning: 'Selbstlernmaterial',
+  },
+  helpdesk: {
+    contact: {
+      reference: 'Betreff',
+      message: 'Nachricht',
+      submit: 'Absenden',
+      firstText: 'Der TEgoDi-Helpdesk für Studierende ist eine zentrale Online-Informationsplattform zur Unterstützung der Planung und Durchführung (digitaler) Medienprojekte. Er ist als offener Moopaed-Kurs konzipiert und kann von allen Personen mit Zugang zur Lernplattform der PH Weingarten genutzt werden.',
+      partHeader: 'In den vier Unterbereichen',
+      parts: ['News und Termine', 'Entscheidungshilfen', 'Ansprechpartner', 'Austausch und Vernetzung'],
+      partBottom: 'finden sich neben zahlreichen Informationen zu verschiedenen Aspekten des digitalen Lehren und Lernens auch eine interaktive Entscheidungshilfe sowie eine kuratierte Linkliste, die interessierte Studierenden von der Ideenfindung über die Organisation bis hin zur medialen Realisierung bei sämtlichen Schritten der Projektumsetzung unterstützen. Außerdem besteht die Möglichkeit sich bei konkreten Fragen oder individuellem Beratungsbedarf direkt über den TEgoDi-Helpdesk an das Team der Lernbegleitung zu wenden oder sich mit anderen Studierenden auszutauschen und zu vernetzen.',
+      partEnd: 'Sollten Sie Interesse haben, ein Medienprojekt im Rahmen Ihres Studiums umzusetzen, schauen Sie am besten gleich vorbei. Und falls Sie Zweifel haben, ob Sie dieser Aufgabe gewachsen sind… keine Angst, der TEgoDi-Helpdesk und das Team der Lernbegleitung werden dabei bedarfsorientiert unterstützen.',
+      contactFieldText: 'Bei individuellen Fragen und Problemen rund um die Durchführung Ihrer Lehr- beziehungsweise Medienentwicklungsprojekte steht Ihnen das Team der Lernbegleitung gerne beratend zur Seite. Um eine qualitative und effiziente Beratung zu erleichtern, spezifizieren Sie bei der Kontaktaufnahme bitte Ihre konkrete Frage- oder Problemstellung so gut wie möglich.',
+    },
+  },
+  project: {
+    vision: {
+      header: 'Vision',
+      first: 'Ziel des „Projektes Teacher Education goes Digital“ (TEgoDi) ist die Entwicklung und Implementierung eines Konzepts zur wissenschaftlich fundierte und forschungsbasierte Vermittlung digitalisierungsbezogener Kompetenzen für Lehramtsstudierende, Lehrkräfte und Hochschullehrer.',
+      second: 'Die spezifische Struktur der Pädagogischen Hochschule wird genutzt, um ein interdisziplinär ausgerichtetes Konzept zur Förderung der medienpädagogischen sowie mediendidaktischen und medienfachdidaktischen Kompetenzen von Lehrenden und Studierenden zu entwickeln und zu implementieren. Im Fokus stehen mediengestützte Lehr-Lernangebote im schulischen Unterricht. Studierende des Lehramts werden künftig während ihres Studiums verbindlich zwei fachdidaktisch und/oder bildungswissenschaftlich angebundene Projekte durchführen. Den fachlichen Kontext können die Studierenden frei wählen. Eines der Projekte wird auf die Nutzung von elektronischen Medien in selbst entwickelten Lehr-Lern-Settings abzielen, das andere auf die eigenständige Entwicklung digital unterstützter Lehr- oder Lernmaterialien.Damit die studentischen Projekte erfolgreich durchgeführt werden können, sorgt die Pädagogische Hochschule zudem für die erforderlichen organisatorischen und technischen Infrastrukturen und schafft Unterstützungsangebote, wie etwa Selbstlernmaterialien, Tutorien oder Feedbackmechanismen für die selbstgesteuerte Weiterentwicklung der Studierenden.',
+    },
+    missionStatement: {
+      header: 'Mission Statement',
+      ap1: 'Mit System die Ziele erreichen und dabei die Qualität nicht aus den Augen verlieren: Das Projektmanagement gibt die organisatorischen Rahmen und unterstützt bei den iterativen Strukturen innerhalb des Projektrahmens. Die Dissemination und die kontinuierliche Kommunikation mit dem Fördergeber sind wichtige komplementäre Verantwortungen.',
+      ap2: 'Anforderungen ermitteln – Implementation stetig optimieren – Erfolge evaluieren! Die wissenschaftliche Begleitforschung generiert mithilfe eines Mixed-Methods-Ansatz wissenschaftliche und praxisrelevante Erkenntnisse, um eine bedarfsorientierte Gestaltung und Implementation der Unterstützungsangebote bestmöglich zu fördern. Auch die Akzeptanz, die Wirkung und das Nachnutzungspotenzial sollen so gesichert werden. Diese Aktivitäten ermöglichen einen gemeinsamen Lernprozess, zeigen Gelingensbedingungen und Herausforderungen auf und sprechen fundierte Handlungsempfehlungen für Transfer und Nachhaltigkeit aus.',
+      ap3: 'Das Kompetenzraster bietet Studierenden und Lehrenden einen umfangreichen Orientierungsrahmen in Bezug auf medienpädagogische, mediendidaktische und medienfachdidaktische Kompetenzen. Auf dieser Grundlage können sie sich sicher und verantwortungsvoll in einer von digitalen Medien geprägten Welt bewegen und sind in der Lage, im späteren Berufsleben digitale Medien systematisch zur Unterstützung schulischer (Lern-)Prozesse einzusetzen. Durch passgenaues Learning Analytics und automatisiertes Feedback können Lernende ihre aktuelle Kompetenzstufe ermitteln und ihre Kompetenzentwicklung verfolgen, sodass sie sich, aufbauend auf ihren vorhandenen Fertigkeiten, zielgerichtet weiterbilden können.',
+      ap4: 'Bedarf an Material, um die Medienprojekte angehen zu können? Noch ein wenig unschlüssig, was das Thema Medienprojekte managen und thematisch aufarbeiten bedeutet? Die Selbstlernmaterialien bieten Studierenden Unterstützung hinsichtlich dem zielgerichteten Einsatz vieler verschiedener Medienformate und deckt Gestaltungsfragen bei der Entwicklung und Umsetzung auf. Mit Hilfe der breit gestreuten Materialsammlung soll Orientierung für die Recherche und Einordnung der Themen dargeboten werden.',
+      ap5: 'Keine Angst vor Medienprojekten! Getreu diesem Motto werden im Rahmen des Arbeitspakets „Lernbegleitung“ verschiedene Maßnahmen entwickelt, um Studierende bei der Planung und Durchführung entsprechender Vorhaben zu unterstützen. Neben einer zentralen Informationsplattform bildet vor allem der Einsatz studentischer Lernbegleiter:innen eine tragende Säule des mehrteiligen Betreuungskonzepts. Sie stehen bei individuellen Fragen und Problemen mit Rat und Tat zur Seite und werden im Rahmen einer speziell dafür entwickelten Qualifizierungsmaßnahme auf diese anspruchsvolle Aufgabe vorbereitet.',
+      ap6: 'Kommunikation im Auftrag der Vernetzung: Die Brückenstellen vertreten als Change Agents das Projekt in den beiden Fakultäten der PH Weingarten und unterstützen die curriculare Anbindung. Dabei ist das oberste Ziel, den Aufbau einer Community of Practice im Hinblick auf eine zeitgemäße Lehre unter Einsatz digitaler Medien voranzutreiben. Dafür werden Ermöglichungsräume für die Kollaboration geschaffen und ein Beratungs- und Unterstützungssystem etabliert.',
+      ap7: 'Kompetent durch Anwendung! Um medienbezogene Kompetenzen zu entwickeln, sollte man sich auch aktiv mit Medien auseinandersetzen. Hierfür wird der Makerspace der Pädagogischen Hochschule Weingarten, das CoLiLab, in seiner Kapazität erweitert und um zusätzliche Säulen ergänzt. Studierende (& Lehrende) können sich dann beispielweise auch Medienproduktionsequipment ausleihen und zuhause am gewohnten Rechner schneiden oder einen Zeitslot im CoLiLab buchen und vor Ort loslegen.',
+    },
+  },
+  footer: {
+    imprint: 'Impressum',
+    data: 'Datenschutz',
+    de: 'Deutsch',
+    en: 'English',
+  },
+};
+
+export default de;

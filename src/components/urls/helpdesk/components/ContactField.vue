@@ -2,10 +2,7 @@
   <div class="contactFieldWrapper">
     <div>
       <div class="innerText">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna
-          aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et.</p>
+        <p>{{ $t('helpdesk.contact.contactFieldText') }}</p>
         <div>
           <p>Ansprechpartner: Max Mustermann</p>
           <p>Adresse: Musterweg 123</p>
@@ -14,8 +11,15 @@
         </div>
       </div>
     </div>
-    <div class="iframeWrapper">
-      <p>2</p>
+    <div class="contactWrapper">
+      <p>{{ $t('helpdesk.contact.reference') }}</p>
+      <input v-model="reference">
+      <p>{{ $t('helpdesk.contact.message') }}</p>
+      <textarea v-model="message" class="area"/>
+      <div style="width: 100%; display: flex; justify-content: space-between">
+        <button class="submitButton" @click="submitEmail">{{ $t('helpdesk.contact.submit') }}</button>
+        <p>Oder eine Mail an tegodi@tegodi.tegodi</p>
+      </div>
     </div>
   </div>
 </template>
@@ -23,6 +27,17 @@
 <script>
 export default {
   name: 'ContactField',
+  data() {
+    return {
+      reference: '',
+      message: '',
+    };
+  },
+  methods: {
+    submitEmail() {
+      document.location = `mailto:tegodi@tegodi.tegodi?subject=${this.reference}&body=${this.message}`;
+    },
+  },
 };
 </script>
 
@@ -48,9 +63,20 @@ export default {
   grid-gap: 5vh;
 }
 
-.iframeWrapper {
+.contactWrapper {
   width: 100%;
   height: 100%;
-  background: #888888;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 3ch;
+}
+
+.area {
+  flex-grow: 1;
+}
+
+.submitButton {
+  width: 50%;
 }
 </style>

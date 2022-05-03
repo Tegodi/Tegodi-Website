@@ -1,0 +1,22 @@
+[
+  {
+    "termin": "abc",
+    "am": "23.05.2022",
+    "thema": "<p>Das ist ein tolles, sehr langes thema</p>"
+  },
+  {
+    "termin": "def",
+    "am": "23.05.2022",
+    "thema": "<p>Das ist ein tolles, sehr langes thema</p>"
+  },
+  {
+    "termin": "ghi",
+    "am": "23.05.2022",
+    "thema": "Das ist ein tolles, sehr langes thema</p>"
+  },
+  {
+    "termin": "def",
+    "am": "23.05.2022",
+    "thema": "<p></p>"
+  }
+]
