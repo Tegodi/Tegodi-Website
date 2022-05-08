@@ -1,22 +1,18 @@
 [
   {
-    "termin": "abc",
-    "am": "23.05.2022",
-    "thema": "<p>Das ist ein tolles, sehr langes thema</p>"
+    "termin": "Talk: Wie funktionert Digital Learning",
+    "am": "23.05.2022"
   },
   {
-    "termin": "def",
-    "am": "23.05.2022",
-    "thema": "<p>Das ist ein tolles, sehr langes thema</p>"
+    "termin": "Diskussion: Wie kann die Hochschule profitieren",
+    "am": "23.05.2022"
   },
   {
-    "termin": "ghi",
-    "am": "23.05.2022",
-    "thema": "Das ist ein tolles, sehr langes thema</p>"
+    "termin": "Workshop: Random title generation",
+    "am": "23.05.2022"
   },
   {
-    "termin": "def",
-    "am": "23.05.2022",
-    "thema": "<p></p>"
+    "termin": "Talk: mir gehen die Ideen aus",
+    "am": "23.05.2022"
   }
 ]

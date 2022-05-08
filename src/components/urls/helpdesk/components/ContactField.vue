@@ -3,11 +3,15 @@
     <div>
       <div class="innerText">
         <p>{{ $t('helpdesk.contact.contactFieldText') }}</p>
-        <div>
-          <p>Ansprechpartner: Max Mustermann</p>
-          <p>Adresse: Musterweg 123</p>
-          <p>Telefon: Musternummer</p>
-          <p>Email: max.mustermann@muster.de</p>
+        <div class="griddify">
+          <p>Ansprechpartner</p>
+          <p>Christian Schmidt</p>
+          <p>Adresse</p>
+          <p>Kirchplatz 2 (Raum F 3.08) | 88250 Weingarten</p>
+          <p>Telefon</p>
+          <p>+49 751 501-8209</p>
+          <p>E-Mail</p>
+          <a href="mailto:christian.schmidt@ph-weingarten.de">christian.schmidt@ph-weingarten.de</a>
         </div>
       </div>
     </div>
@@ -42,6 +46,13 @@ export default {
 </script>
 
 <style scoped>
+.griddify {
+  display: grid;
+  grid-template-columns: 30ch auto;
+  grid-template-rows: repeat(4, 3ch);
+  grid-gap: 1ch;
+}
+
 .contactFieldWrapper {
   width: 100%;
   height: 60vh;

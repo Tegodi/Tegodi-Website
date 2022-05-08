@@ -87,10 +87,6 @@ export default {
 }
 
 @media screen and (max-width: 1025px) {
-  .language {
-
-  }
-
   .footerTop {
     flex-direction: column;
     height: 24vh;

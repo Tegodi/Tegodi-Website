@@ -4,7 +4,7 @@ import de from './de';
 
 const i18n = createI18n({
   locale: 'de',
-  fallbackLocale: 'en',
+  fallbackLocale: 'de',
   messages: {
     de,
     en,

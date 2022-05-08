@@ -1,8 +1,8 @@
 <template>
-  <div class="griddify" :style="{width: width + 'vw', marginLeft: margin + '%'}">
+  <div :style="{width: width + 'vw', marginLeft: margin + '%'}" class="griddify">
     <div class="vertCardWrapper">
       <div class="rotateVertCardHeader">
-        <div class="rotateFill" :style="{backgroundColor: background, width: `${widthOfLeftBorder}vw`}">
+        <div :style="{backgroundColor: background, width: `${widthOfLeftBorder}vw`}" class="rotateFill">
           <p>{{ header }}</p>
         </div>
       </div>
@@ -11,10 +11,10 @@
       </div>
     </div>
     <div class="bottomCorner corners">
-      <div class="actualBottomCorner" :style="{backgroundColor: background}"></div>
+      <div :style="{backgroundColor: background}" class="actualBottomCorner"></div>
     </div>
     <div class="rightCorner corners">
-      <div class="actualRightCorner" :style="{backgroundColor: background}"></div>
+      <div :style="{backgroundColor: background}" class="actualRightCorner"></div>
     </div>
   </div>
 </template>
@@ -120,4 +120,15 @@ export default {
   font-weight: 400;
   font-family: "Volte", serif;
 }
+
+@media screen and (max-width: 1025px) {
+  .griddify {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .actualBottomCorner, .actualRightCorner {
+    display: none;
+  }
+}
+
 </style>

@@ -5,11 +5,10 @@
     </div>
     <div class="terminContent">
       <div class="innerTermin">
-        <h2>Termine</h2>
+        <h2 style="margin-bottom: 3vh">Termine</h2>
         <div v-for="(termin, i) in termine" :key="i" class="terminFeld">
-          <p>{{ termin.termin }}</p>
+          <p class="terminTitle">{{ termin.termin }}</p>
           <p>{{ termin.am }}</p>
-          <span v-html="termin.thema"/>
         </div>
       </div>
     </div>
@@ -67,6 +66,7 @@ export default {
 
 .innerTermin {
   padding: 1vh;
+  font-family: "Opensans", serif;
 }
 
 .drawIn {
@@ -83,6 +83,15 @@ export default {
 
 .rotateOut {
   animation: rotateOut 0.5s forwards;
+}
+
+.terminFeld {
+  margin-bottom: 2vh;
+}
+
+.terminTitle {
+  text-decoration: #141414 underline;
+  margin-bottom: 0.5vh;
 }
 
 @keyframes animateDateIn {
