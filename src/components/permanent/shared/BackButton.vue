@@ -1,9 +1,9 @@
 <template>
   <div class="backButton">
-    <div class="backChevron" @click="back()" :style="{backgroundColor: chevronBackground, color: chevronColor}">
+    <div :style="{backgroundColor: chevronBackground, color: chevronColor}" class="backChevron" @click="back()">
       <ChevronLeftIcon class="actualChevron"/>
     </div>
-    <div class="locationTag" :style="{backgroundColor: textBackground, color: textColor}">
+    <div :style="{backgroundColor: textBackground, color: textColor}" class="locationTag">
       <p>{{ title }}</p>
     </div>
   </div>
@@ -81,5 +81,17 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+@media screen and (max-width: 1025px) {
+  .locationTag {
+    font-size: 2rem;
+    flex-grow: 1;
+  }
+  .backButton {
+    width: 100vw !important;
+  }
 }
 </style>

@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .terminDrawerWrapper {
   position: fixed;
-  z-index: 5;
+  z-index: 0;
   right: 0;
   top: 20vh;
   display: flex;
@@ -151,18 +151,18 @@ export default {
   border-top: 3px solid #141414;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   .terminContent {
-    width: 50vw;
+    width: 70vw;
   }
 
   .terminDrawerWrapper {
-    transform: translateX(50.3vw);
+    transform: translateX(70.3vw);
   }
 
   @keyframes animateDateIn {
     from {
-      transform: translateX(50.3vw);
+      transform: translateX(70.3vw);
     }
     to {
       transform: translateX(0);
@@ -174,7 +174,7 @@ export default {
       transform: translateX(0);
     }
     to {
-      transform: translateX(50.3vw);
+      transform: translateX(70.3vw);
     }
   }
 }

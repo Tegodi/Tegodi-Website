@@ -126,8 +126,24 @@ export default {
     width: 100% !important;
     margin: 0 !important;
   }
-  .actualBottomCorner, .actualRightCorner {
+  .actualBottomCorner, .actualRightCorner, .corners {
     display: none;
+    width: 0;
+    height: 0;
+  }
+  .rotateVertCardHeader {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+    white-space: normal;
+  }
+  .vertCardWrapper {
+    flex-direction: column;
+  }
+  .vertTexts {
+    padding: 3vh;
+  }
+  .rotateFill {
+    width: 100% !important;
   }
 }
 

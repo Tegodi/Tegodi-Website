@@ -90,11 +90,19 @@ export default {
   .footerTop {
     flex-direction: column;
     height: 24vh;
+    width: 100% !important;
+    overflow: hidden;
   }
 
   .footerThirds {
     width: 100%;
     height: 8vh;
   }
+
+  .logosponsor > img {
+    width: auto;
+    height: 90%;
+  }
+
 }
 </style>

@@ -13,8 +13,8 @@ import TerminDrawer from './components/permanent/terminDrawer/TerminDrawer.vue';
 export default {
   name: 'App',
   components: {
-    TerminDrawer,
     Footer,
+    TerminDrawer,
   },
   methods: {
     async fetchData() {

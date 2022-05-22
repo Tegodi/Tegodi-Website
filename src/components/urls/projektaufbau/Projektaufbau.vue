@@ -28,7 +28,7 @@
   </div>
   <div class="projektaufbauWrapper">
     <div class="svgWrapper">
-      <svg fill="none" height="820" viewBox="0 0 1200 1200" width="1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg :height="getWindowWidth()" :width="getWindowWidth()" fill="none" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect fill="white" height="1200" width="1200"/>
         <rect id="crop 1" fill="url(#pattern0)" height="1200" width="1200"/>
         <circle id="k1" class="svgcircles" cx="685" cy="257" fill="#000000" opacity="0" r="113" @click="openModalWithData(1)"/>
@@ -111,6 +111,12 @@ export default {
         this.nowActive += x;
       }
     },
+    getWindowWidth() {
+      if (window.innerWidth > 1025) {
+        return '800px';
+      }
+      return `${window.innerWidth}px`;
+    },
   },
 };
 </script>
@@ -149,7 +155,6 @@ export default {
 .dialogWrapper {
   position: fixed;
   inset: 0;
-  z-index: 10;
   overflow-y: auto;
 }
 
@@ -157,6 +162,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99999;
 }
 
 .dialogContent {
@@ -219,6 +225,63 @@ export default {
 
 .spacer {
   width: 10vh;
+}
+
+@media screen and (max-width: 1025px) {
+  .svgWrapper {
+    margin-top: 20vh;
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dialogContent {
+    height: 90%;
+    width: 90%;
+    top: calc(50% - 45vh);
+  }
+  .imageTextSeparator {
+    padding: 5vh;
+    display: grid;
+    width: calc(100% - 10vh);
+    height: calc(100% - 10vh);
+    grid-template-rows: 40% 60%;
+    grid-template-columns: 10% 80% 10%;
+  }
+  .chevronLeft {
+    grid-row: 1 /span 2;
+    grid-column: 1;
+  }
+  .chevronRight {
+    grid-row: 1 /span 2;
+    grid-column: 3;
+  }
+  .imageDiv {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .imageDiv > img {
+    position: relative;
+    width: auto;
+    height: 70%;
+  }
+  .textDiv {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .textDiv > p {
+    margin-left: 0;
+    font-family: "Opensans", serif;
+    color: var(--header-text-color);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }
 
 </style>
