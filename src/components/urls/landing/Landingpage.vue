@@ -136,7 +136,7 @@ export default {
         .focus();
     },
     dummyClick() {
-
+      console.log('dummy');
     },
   },
   mounted() {
