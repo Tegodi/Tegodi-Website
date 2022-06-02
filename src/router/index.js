@@ -4,6 +4,7 @@ import Landingpage from '../components/urls/landing/Landingpage.vue';
 import Projektaufbau from '../components/urls/projektaufbau/Projektaufbau.vue';
 import Helpdesk from '../components/urls/helpdesk/Helpdesk.vue';
 import Datenschutz from '../components/urls/datenschutz/Datenschutz.vue';
+import Impressum from '../components/urls/impressum/Impressum.vue';
 
 const routes = [
   {
@@ -29,6 +30,12 @@ const routes = [
     name: 'Datenschutz',
     component: Datenschutz,
     meta: { title: 'Datenschutz' },
+  },
+  {
+    path: '/impressum',
+    name: 'Impressum',
+    component: Impressum,
+    meta: { title: 'Impressum' },
   },
 ];
 

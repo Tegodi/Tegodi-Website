@@ -1,6 +1,6 @@
 <template>
   <div class="iframeWrapper">
-    <iframe height="100%" src="https://tegodi.ph-weingarten.de/tegodi_datenschutz.pdf#toolbar=0" width="100%"/>
+    <iframe height="100%" src="/tegodi_datenschutz.pdf#toolbar=0" width="100%"/>
   </div>
 </template>
 

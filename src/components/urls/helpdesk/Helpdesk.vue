@@ -6,12 +6,24 @@
         <p>{{ $t('helpdesk.contact.firstText') }}</p>
         <div>
           <p>{{ $t('helpdesk.contact.partHeader') }}</p>
-          <ul style="margin-left: 3vw">
-            <li>{{$t('helpdesk.contact.parts[0]')}}</li>
-            <li>{{$t('helpdesk.contact.parts[1]')}}</li>
-            <li>{{$t('helpdesk.contact.parts[2]')}}</li>
-            <li>{{$t('helpdesk.contact.parts[3]')}}</li>
-          </ul>
+          <div style="margin-left: 2vw; margin-bottom: 2vw">
+            <div class="listItem">
+              <img :src="swoosh">
+              <p>{{$t('helpdesk.contact.parts[0]')}}</p>
+            </div>
+            <div class="listItem">
+              <img :src="swoosh">
+              <p>{{$t('helpdesk.contact.parts[1]')}}</p>
+            </div>
+            <div class="listItem">
+              <img :src="swoosh">
+              <p>{{$t('helpdesk.contact.parts[2]')}}</p>
+            </div>
+            <div class="listItem">
+              <img :src="swoosh">
+              <p>{{$t('helpdesk.contact.parts[3]')}}</p>
+            </div>
+        </div>
           <p>{{ $t('helpdesk.contact.partBottom') }}</p>
         </div>
         <p>{{ $t('helpdesk.contact.partEnd') }}</p>
@@ -28,15 +40,34 @@ import BackButton from '../../permanent/shared/BackButton.vue';
 import VideoComponent from './components/VideoComponent.vue';
 import ContactField from './components/ContactField.vue';
 
+import swoosh from '../../../assets/goswoosh_green.png';
+
 export default {
   name: 'Helpdesk',
   components: {
     ContactField, VideoComponent, BackButton, VerticalField,
   },
+  data() {
+    return {
+      swoosh,
+    };
+  },
 };
 </script>
 
 <style scoped>
+.listItem {
+  display: flex;
+  align-items: center;
+  grid-gap: 1ch;
+  height: 3ch;
+}
+
+.listItem > img {
+  height: 1.5ch;
+  aspect-ratio: auto;
+}
+
 .helpdeskWrapper {
   width: 100%;
   min-height: 90vh;
@@ -52,5 +83,12 @@ export default {
   display: flex;
   flex-direction: column;
   grid-gap: 10vh;
+}
+
+@media screen and (max-width: 1025px) {
+  .actualHelpdeskContent {
+    width: 100%;
+    padding: 3vh;
+  }
 }
 </style>

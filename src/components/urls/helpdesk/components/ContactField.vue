@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .griddify {
   display: grid;
-  grid-template-columns: 30ch auto;
+  grid-template-columns: auto auto;
   grid-template-rows: repeat(4, 3ch);
   grid-gap: 1ch;
 }
@@ -72,6 +72,7 @@ export default {
   display: flex;
   flex-direction: column;
   grid-gap: 5vh;
+  line-height: 1.5;
 }
 
 .contactWrapper {
@@ -89,5 +90,15 @@ export default {
 
 .submitButton {
   width: 50%;
+}
+
+@media screen and (max-width: 1025px) {
+  .contactFieldWrapper {
+    height: auto;
+  }
+  .griddify {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, 3ch);
+  }
 }
 </style>

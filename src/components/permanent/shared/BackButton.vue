@@ -56,7 +56,7 @@ export default {
 }
 
 .backButton {
-  width: 25vw;
+  width: 50vw;
   height: 10vh;
   display: flex;
   flex-direction: row;

@@ -48,6 +48,11 @@ export default {
 </script>
 
 <style scoped>
+
+p {
+  hyphens: auto;
+}
+
 .griddify {
   display: grid;
   grid-template-columns: 100% 6vh;
@@ -96,6 +101,7 @@ export default {
   grid-gap: 5vh;
   font-family: "Opensans", serif;
   font-weight: 200;
+  line-height: 1.5;
 }
 
 .rotateVertCardHeader {

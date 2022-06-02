@@ -1,7 +1,7 @@
 <template>
   <div class="footerTop">
     <div class="footerThirds flexFooters" style="background-color: #d1e040">
-      <p>{{ $t('footer.imprint') }}</p>
+      <p style="cursor: pointer" @click="$router.push('/impressum')">{{ $t('footer.imprint') }}</p>
       <p style="cursor: pointer" @click="$router.push('/datenschutz')">{{ $t('footer.data') }}</p>
     </div>
     <div class="footerThirds" style="background-color: #848c94">

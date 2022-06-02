@@ -22,17 +22,25 @@ export default {
 
 <style scoped>
 .videoComponentWrapper {
-  margin: 0 10vw;
+  margin: 0 10vw 10vw 10vw;
   width: calc(100% - 20vw);
   height: 40vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  grid-gap: 7vh;
 }
 
 .image {
   height: 80%;
   width: auto;
+}
+
+@media screen and (max-width: 1025px) {
+  .videoComponentWrapper {
+    width: 100%;
+    margin: 0;
+  }
 }
 </style>

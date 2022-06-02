@@ -14,6 +14,7 @@
             <img :src="pt[nowActive - 1]"/>
           </div>
           <div class="textDiv">
+            <p>AP{{nowActive}}</p>
             <p>{{$t(`project.missionStatement.ap${nowActive}`)}}</p>
           </div>
           <div class="chevron chevronRight" @click="switchCurrent(1)">
@@ -113,9 +114,9 @@ export default {
     },
     getWindowWidth() {
       if (window.innerWidth > 1025) {
-        return '800px';
+        return '550px';
       }
-      return `${window.innerWidth}px`;
+      return `${window.innerWidth * 0.8}px`;
     },
   },
 };
@@ -123,7 +124,7 @@ export default {
 
 <style scoped>
 .svgWrapper {
-  margin-top: 5vh;
+  margin-top: 15vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -136,7 +137,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  grid-gap: 10vh;
+  grid-gap: 5vh;
 }
 
 .svgcircles {
@@ -228,8 +229,12 @@ export default {
 }
 
 @media screen and (max-width: 1025px) {
+  .projektaufbauWrapper {
+    grid-gap: 0;
+  }
+
   .svgWrapper {
-    margin-top: 20vh;
+    margin-top: 10vh;
     width: 100%;
     aspect-ratio: 1;
     display: flex;
