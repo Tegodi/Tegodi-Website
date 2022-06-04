@@ -1,4 +1,8 @@
 {
+  "bar": {
+    "stellen": "Stellenausschreibungen",
+    "publikationen": "Publikationen"
+  },
   "landing": {
     "project": "Projektaufbau",
     "parts": "Teilaufbau",

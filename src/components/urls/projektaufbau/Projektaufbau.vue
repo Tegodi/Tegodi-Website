@@ -47,15 +47,25 @@
         </defs>
       </svg>
     </div>
-    <VerticalField
-      :header="$t('project.vision.header')"
-      :margin="5"
-      :width="40"
-      :width-of-left-border="5"
-      background="var(--tegodi-green)">
-      <p>{{ $t('project.vision.first') }}</p>
-      <p>{{ $t('project.vision.second') }}</p>
-    </VerticalField>
+    <div class="vertIframe">
+      <VerticalField
+        :header="$t('project.vision.header')"
+        :margin="0"
+        :width="40"
+        :width-of-left-border="5"
+        background="var(--tegodi-green)">
+        <p>{{ $t('project.vision.first') }}</p>
+        <p>{{ $t('project.vision.second') }}</p>
+      </VerticalField>
+      <iframe src="https://prezi.com/p/embed/6gra9zrhuhyh/"
+              id="iframe_container"
+              frameborder="0"
+              webkitallowfullscreen=""
+              mozallowfullscreen=""
+              allowfullscreen=""
+              allow="autoplay; fullscreen">
+      </iframe>
+    </div>
     <div class="spacer"></div>
   </div>
 </template>
@@ -228,7 +238,30 @@ export default {
   width: 10vh;
 }
 
+.vertIframe {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 5vw;
+  justify-content: space-evenly;
+}
+
+.vertIframe > iframe {
+  width: 40vw;
+}
+
 @media screen and (max-width: 1025px) {
+  .vertIframe {
+    flex-direction: column;
+    margin-bottom: 5vh;
+    grid-gap: 0;
+  }
+
+  .vertIframe > iframe {
+    width: calc(100vw - 6vh);
+    padding: 0 3vh;
+  }
+
   .projektaufbauWrapper {
     grid-gap: 0;
   }

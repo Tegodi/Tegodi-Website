@@ -3,10 +3,8 @@
     <p>menu</p>
   </div>
   <div class="drawerWrapper" ref="animateDrawerTarget">
-    <p>text</p>
-    <p>text</p>
-    <p>text</p>
-    <p>text</p>
+    <p>{{$t('bar.stellen')}}</p>
+    <p>{{$t('bar.publikationen')}}</p>
     <p style="font-family: iconFont, serif" @click="handleDrawerClicked()">arrow_forward</p>
   </div>
 </template>
@@ -33,6 +31,8 @@ export default {
   top: 5vh;
   right: 5vh;
 
+  z-index: 99999;
+
   width: 10vh;
   height: 10vh;
   position: fixed;
@@ -47,6 +47,8 @@ export default {
 }
 
 .drawerWrapper {
+  z-index: 99999;
+
   display: block;
   position: fixed;
   height: 20vh;

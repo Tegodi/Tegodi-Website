@@ -1,4 +1,8 @@
 {
+  "bar": {
+    "stellen": "Open positions",
+    "publikationen": "Publications"
+  },
   "landing": {
     "project": "Project Structure",
     "parts": "Parts",

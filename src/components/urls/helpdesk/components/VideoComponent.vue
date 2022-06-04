@@ -33,8 +33,8 @@ export default {
 }
 
 .image {
-  height: 80%;
-  width: auto;
+  height: auto;
+  width: 80vw;
 }
 
 @media screen and (max-width: 1025px) {

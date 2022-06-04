@@ -95,10 +95,15 @@ export default {
 @media screen and (max-width: 1025px) {
   .contactFieldWrapper {
     height: auto;
+    flex-direction: column;
   }
   .griddify {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(4, 3ch);
+  }
+  .contactFieldWrapper > div {
+    width: 100%;
+    padding: 3vh;
   }
 }
 </style>
