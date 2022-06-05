@@ -6,10 +6,12 @@
     <div :style="{backgroundColor: textBackground, color: textColor}" class="locationTag">
       <p>{{ title }}</p>
     </div>
+    <Bar />
   </div>
 </template>
 
 <script>
+import Bar from '@/components/permanent/navbar/Bar.vue';
 import { ChevronLeftIcon } from '@heroicons/vue/solid';
 
 export default {
@@ -40,7 +42,7 @@ export default {
       required: true,
     },
   },
-  components: { ChevronLeftIcon },
+  components: { ChevronLeftIcon, Bar },
   methods: {
     back() {
       this.$router.push(this.backURL);
@@ -56,6 +58,7 @@ export default {
 }
 
 .backButton {
+  z-index: 6;
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -63,6 +66,7 @@ export default {
 }
 
 .backChevron {
+  z-index: 6;
   height: 100%;
   aspect-ratio: 1;
   display: flex;
@@ -72,6 +76,7 @@ export default {
 }
 
 .locationTag {
+  z-index: 6;
   flex-grow: 1;
   height: 100%;
   background-color: #888888;
@@ -91,6 +96,7 @@ export default {
     flex-grow: 1;
   }
   .backButton {
+    z-index: 4;
     width: 100vw !important;
   }
 }

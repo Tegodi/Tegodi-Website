@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
+import Stellen from '../components/urls/stellen/Stellen.vue';
 import Publikationen from '../components/urls/publications/Publikationen.vue';
 import Landingpage from '../components/urls/landing/Landingpage.vue';
 import Projektaufbau from '../components/urls/projektaufbau/Projektaufbau.vue';
@@ -43,6 +44,12 @@ const routes = [
     name: 'Publikationen',
     component: Publikationen,
     meta: { title: 'Publikationen' },
+  },
+  {
+    path: '/stellen',
+    name: 'Stellen',
+    component: Stellen,
+    meta: { title: 'Stellen' },
   },
 ];
 

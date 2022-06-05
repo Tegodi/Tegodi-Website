@@ -1,12 +1,10 @@
 <template>
-  <Bar v-if="$route.fullPath !== '/'"/>
   <TerminDrawer v-if="$route.fullPath !== '/'"/>
   <router-view></router-view>
   <Footer/>
 </template>
 
 <script>
-import Bar from './components/permanent/navbar/Bar.vue';
 import Footer from './components/permanent/footer/Footer.vue';
 import TerminDrawer from './components/permanent/terminDrawer/TerminDrawer.vue';
 
@@ -15,7 +13,6 @@ export default {
   components: {
     Footer,
     TerminDrawer,
-    Bar,
   },
   methods: {
     async fetchData() {

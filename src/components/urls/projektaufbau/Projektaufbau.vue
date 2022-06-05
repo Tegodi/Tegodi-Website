@@ -183,6 +183,7 @@ export default {
   height: 70vh;
   background-color: var(--tegodi-green);
   border-radius: 20px;
+  z-index: 999999999;
 }
 
 .dialogOverlay {
@@ -190,6 +191,7 @@ export default {
   inset: 0;
   background-color: black;
   opacity: 30%;
+  z-index: 999999998;
 }
 
 .chevron {
@@ -259,6 +261,7 @@ export default {
 
   .vertIframe > iframe {
     width: calc(100vw - 6vh);
+    height: 40vh;
     padding: 0 3vh;
   }
 

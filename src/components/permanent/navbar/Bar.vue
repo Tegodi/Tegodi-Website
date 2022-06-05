@@ -3,9 +3,8 @@
     <p>menu</p>
   </div>
   <div class="drawerWrapper" ref="animateDrawerTarget">
-    <p>{{$t('bar.stellen')}}</p>
-    <p>{{$t('bar.publikationen')}}</p>
-    <p style="font-family: iconFont, serif" @click="handleDrawerClicked()">arrow_forward</p>
+    <p @click="pushTo('stellen')">{{$t('bar.stellen')}}</p>
+    <p @click="pushTo('publikationen')">{{$t('bar.publikationen')}}</p>
   </div>
 </template>
 
@@ -22,22 +21,21 @@ export default {
       this.showDrawer = !this.showDrawer;
       this.$refs.animateDrawerTarget.className = this.showDrawer ? 'drawerWrapper animateIn' : 'drawerWrapper animateOut';
     },
+    pushTo(link) {
+      this.$router.push(`/${link}`);
+    },
   },
 };
 </script>
 
 <style scoped>
 .barWrapper {
-  top: 5vh;
   right: 5vh;
 
-  z-index: 99999;
-
-  width: 10vh;
-  height: 10vh;
-  position: fixed;
-  background-color: var(--tegodi-green);
-  border-radius: 50%;
+  z-index: 6;
+  background-color: #c2d500;
+  aspect-ratio: 1;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,14 +45,22 @@ export default {
 }
 
 .drawerWrapper {
-  z-index: 99999;
+  top: 10vh;
+  z-index: 4;
 
-  display: block;
-  position: fixed;
-  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  height: 10vh;
   width: 100%;
-  background-color: aqua;
-  transform: translateY(-20vh);
+  background-color: var(--light-background);
+  transform: translateY(-10vh);
+  font-family: "Volte", serif;
+}
+
+.drawerWrapper > p {
+    cursor: pointer;
 }
 
 .animateIn {
@@ -85,8 +91,8 @@ export default {
 
 @media screen and (max-width: 800px) {
   .barWrapper {
-    width: 5vh;
-    height: 5vh;
+    height: 100%;
+    aspect-ratio: 1;
     font-size: 2rem;
     top: 3vh;
     right: 3vh;

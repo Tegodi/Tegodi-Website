@@ -7,7 +7,7 @@
           <p>Ansprechpartner</p>
           <p>Christian Schmidt</p>
           <p>Adresse</p>
-          <p>Kirchplatz 2 (Raum F 3.08) | 88250 Weingarten</p>
+          <p>Kirchplatz 2 (Raum F 3.08), 88250 Weingarten</p>
           <p>Telefon</p>
           <p>+49 751 501-8209</p>
           <p>E-Mail</p>
@@ -22,7 +22,6 @@
       <textarea v-model="message" class="area"/>
       <div style="width: 100%; display: flex; justify-content: space-between">
         <button class="submitButton" @click="submitEmail">{{ $t('helpdesk.contact.submit') }}</button>
-        <p>Oder eine Mail an tegodi@tegodi.tegodi</p>
       </div>
     </div>
   </div>
@@ -49,7 +48,7 @@ export default {
 .griddify {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: repeat(4, 3ch);
+  grid-template-rows: 3ch 7ch 3ch 3ch;
   grid-gap: 1ch;
 }
 
@@ -68,7 +67,8 @@ export default {
 }
 
 .innerText {
-  width: 90%;
+  margin: 0;
+  width: auto;
   display: flex;
   flex-direction: column;
   grid-gap: 5vh;
@@ -90,20 +90,33 @@ export default {
 
 .submitButton {
   width: 50%;
+  height: 5ch;
+  font-family: "Volte", serif;
+  background-color: white;
+  border:2px solid var(--tegodi-green);
+  transition: all ease 1s;
+}
+
+.submitButton:hover {
+  border-radius: 5vh;
 }
 
 @media screen and (max-width: 1025px) {
   .contactFieldWrapper {
     height: auto;
     flex-direction: column;
+    width: calc(100% - 6vh);
   }
   .griddify {
     grid-template-columns: auto auto;
-    grid-template-rows: repeat(4, 3ch);
+    grid-template-rows: 3ch 7ch 3ch 3ch;
   }
   .contactFieldWrapper > div {
     width: 100%;
     padding: 3vh;
+  }
+  .area {
+    height: 30vh;
   }
 }
 </style>

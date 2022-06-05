@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .terminDrawerWrapper {
   position: fixed;
-  z-index: 0;
+  z-index: 99;
   right: 0;
   top: 20vh;
   display: flex;
