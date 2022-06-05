@@ -15,7 +15,7 @@
           </div>
           <div class="textDiv">
             <p>AP{{nowActive}}</p>
-            <p>{{$t(`project.missionStatement.ap${nowActive}`)}}</p>
+            <p class="scrollableTextDiv">{{$t(`project.missionStatement.ap${nowActive}`)}}</p>
           </div>
           <div class="chevron chevronRight" @click="switchCurrent(1)">
             <ChevronRightIcon style="color: var(--header-text-color)"/>
@@ -227,13 +227,22 @@ export default {
 
 .textDiv {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  grid-gap: 5vh;
+  width: 100%;
 }
-
-.textDiv > p {
-  margin-left: 5vh;
+.textDiv > p:nth-child(1) {
+  font-family: "Volte", serif;
+  font-weight: normal;
+}
+.scrollableTextDiv {
+  width: 80%;
   font-family: "Opensans", serif;
-  color: var(--header-text-color);
+  font-weight: normal;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .spacer {
@@ -312,16 +321,19 @@ export default {
   .textDiv {
     grid-row: 2;
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5%;
   }
-  .textDiv > p {
-    margin-left: 0;
-    font-family: "Opensans", serif;
-    color: var(--header-text-color);
+  .textDiv > p:nth-child(1) {
+    display: inline-flex;
+    justify-content: center;
+    height: 10%;
+  }
+  .scrollableTextDiv {
     display: inline-block;
     width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 85%;
   }
 }
 
