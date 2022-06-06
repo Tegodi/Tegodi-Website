@@ -1,5 +1,5 @@
 <template>
-  <BackButton back-u-r-l="/" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" title="Publikationen" />
+  <BackButton :back-u-r-l="null" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" title="Publikationen" />
   <div class="pubWrapper">
     <div v-if="hasLoaded" class="pubCards">
       <Card v-for="(info, i) in dataString" :info="info" :key="i">

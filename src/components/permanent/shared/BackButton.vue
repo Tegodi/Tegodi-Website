@@ -45,7 +45,11 @@ export default {
   components: { ChevronLeftIcon, Bar },
   methods: {
     back() {
-      this.$router.push(this.backURL);
+      if (this.backURL !== null) {
+        this.$router.push(this.backURL);
+      } else {
+        this.$router.go(-1);
+      }
     },
   },
 };

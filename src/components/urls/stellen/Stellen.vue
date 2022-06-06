@@ -5,7 +5,7 @@
       <Card v-for="(job, index) in jobs" :key="index">
         <h3>{{job.title}}</h3>
         <p style="margin-bottom: 3ch;">Im Bereich <span style="text-decoration: underline">{{job.bereich}}</span></p>
-        <p v-if="Object.hasOwn(job, 'details')" class="inlineExternal">{{$t('stellen.more')}}<ExternalLinkIcon style="width: 2ch"/></p>
+        <p v-if="Object.hasOwn(job, 'details')" class="inlineExternal" @click="$router.push(`/stellen/${job.details}`)">{{$t('stellen.more')}}<ExternalLinkIcon style="width: 2ch"/></p>
       </Card>
     </div>
   </div>
