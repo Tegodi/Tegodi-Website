@@ -98,4 +98,11 @@ export default {
     right: 3vh;
   }
 }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .drawerWrapper {
+    top: 15vh;
+    height: 15vh;
+    transform: translateY(-15vh);
+  }
+}
 </style>

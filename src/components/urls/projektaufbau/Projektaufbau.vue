@@ -336,5 +336,11 @@ export default {
     height: 85%;
   }
 }
-
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .vertIframe > iframe {
+    width: calc(100vw - 20vh);
+    height: 80vh;
+    padding: 0 10vh;
+  }
+}
 </style>

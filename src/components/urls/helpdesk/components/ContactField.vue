@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     submitEmail() {
-      document.location = `mailto:tegodi@tegodi.tegodi?subject=${this.reference}&body=${this.message}`;
+      document.location = `mailto:christian.schmidt@ph-weingarten.de?subject=${this.reference}&body=${this.message}`;
     },
   },
 };
@@ -84,8 +84,20 @@ export default {
   grid-gap: 3ch;
 }
 
+.contactWrapper > p {
+  font-family: "Volte", serif;
+}
+
 .area {
   flex-grow: 1;
+}
+
+.contactWrapper > input {
+  height: 3ch;
+}
+
+.area, .contactWrapper > input {
+  border: 2px solid var(--tegodi-green)
 }
 
 .submitButton {
@@ -117,6 +129,14 @@ export default {
   }
   .area {
     height: 30vh;
+  }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .contactFieldWrapper {
+    width: calc(100% - 20vh);
+  }
+  .contactFieldWrapper > div {
+    padding: 10vh;
   }
 }
 </style>

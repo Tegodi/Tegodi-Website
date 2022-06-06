@@ -152,5 +152,9 @@ p {
     width: 100% !important;
   }
 }
-
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .vertTexts {
+    padding: 10vh;
+  }
+}
 </style>

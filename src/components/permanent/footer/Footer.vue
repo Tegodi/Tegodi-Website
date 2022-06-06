@@ -103,6 +103,8 @@ export default {
     width: auto;
     height: 90%;
   }
+}
+@media screen and (max-width: 900px) and (orientation: landscape) {
 
 }
 </style>

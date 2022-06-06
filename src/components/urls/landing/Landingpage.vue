@@ -258,4 +258,16 @@ export default {
     grid-gap: 0;
   }
 }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .landingTop {
+    flex-direction: row;
+  }
+  .landingTop > div {
+    width: calc(100% / 3);
+    height: 100%;
+  }
+  .landingTop > div > svg {
+    height: 30%;
+  }
+}
 </style>

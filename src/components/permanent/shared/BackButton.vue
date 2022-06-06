@@ -104,4 +104,9 @@ export default {
     width: 100vw !important;
   }
 }
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .backButton {
+    height: 15vh;
+  }
+}
 </style>
