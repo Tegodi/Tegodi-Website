@@ -12,6 +12,10 @@
   },
   "helpdesk": {
     "contact": {
+      "person": "Ansprechpartner",
+      "address": "Adresse",
+      "phone": "Telefon",
+      "mail": "E-Mail",
       "reference": "Betreff",
       "message": "Nachricht",
       "submit": "Absenden",
@@ -48,5 +52,8 @@
   },
   "stellen": {
     "more": "Mehr Informationen"
+  },
+  "headers": {
+    "termine": "Termine"
   }
 }

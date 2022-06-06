@@ -12,6 +12,7 @@
   },
   "helpdesk": {
     "contact": {
+      "person": "Ansprechpartner",
       "reference": "Reference",
       "message": "Message",
       "submit": "Submit"
@@ -42,5 +43,8 @@
   },
   "stellen": {
     "more": "More Information"
-  }
+  },
+  "headers": {
+    "termine": "Events"
+}
 }

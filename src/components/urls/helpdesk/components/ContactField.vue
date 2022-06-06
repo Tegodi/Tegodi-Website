@@ -4,13 +4,13 @@
       <div class="innerText">
         <p>{{ $t('helpdesk.contact.contactFieldText') }}</p>
         <div class="griddify">
-          <p>Ansprechpartner</p>
+          <p>{{$t('helpdesk.contact.person')}}</p>
           <p>Christian Schmidt</p>
-          <p>Adresse</p>
+          <p>{{$t('helpdesk.contact.address')}}</p>
           <p>Kirchplatz 2 (Raum F 3.08), 88250 Weingarten</p>
-          <p>Telefon</p>
+          <p>{{$t('helpdesk.contact.phone')}}</p>
           <p>+49 751 501-8209</p>
-          <p>E-Mail</p>
+          <p>{{ $t('helpdesk.contact.mail') }}</p>
           <a href="mailto:christian.schmidt@ph-weingarten.de">christian.schmidt@ph-weingarten.de</a>
         </div>
       </div>

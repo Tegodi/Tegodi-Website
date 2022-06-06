@@ -5,7 +5,7 @@
     </div>
     <div class="terminContent">
       <div class="innerTermin">
-        <h2 style="margin-bottom: 3vh">Termine</h2>
+        <h2 style="margin-bottom: 3vh">{{$t('headers.termine')}}</h2>
         <div v-for="(termin, i) in termine" :key="i" class="terminFeld">
           <p class="terminTitle">{{ termin.termin }}</p>
           <p>{{ termin.am }}</p>
