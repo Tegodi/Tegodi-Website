@@ -25,7 +25,7 @@
     </div>
   </Dialog>
   <div style="position:absolute;">
-    <BackButton back-u-r-l="/" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--tegodi-green)" text-color="var(--header-text-color)" title="Projektaufbau" />
+    <BackButton back-u-r-l="/" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--tegodi-green)" text-color="var(--header-text-color)" :title="$t('landing.project')" />
   </div>
   <div class="projektaufbauWrapper">
     <div class="svgWrapper">

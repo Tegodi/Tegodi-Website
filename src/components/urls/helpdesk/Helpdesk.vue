@@ -1,6 +1,6 @@
 <template>
   <div class="helpdeskWrapper">
-    <BackButton back-u-r-l="/" chevron-background="var(--light-background)" chevron-color="var(--tegodi-green)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" title="Helpdesk" />
+    <BackButton back-u-r-l="/" chevron-background="var(--light-background)" chevron-color="var(--tegodi-green)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" :title="$t('landing.helpdesk')" />
     <div class="actualHelpdeskContent">
       <VerticalField :margin="8" :width="60" :width-of-left-border="4" background="var(--header-text-color)" header="">
         <p>{{ $t('helpdesk.contact.firstText') }}</p>

@@ -1,5 +1,5 @@
 <template>
-  <BackButton back-u-r-l="/stellen" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" title="Stellen" />
+  <BackButton back-u-r-l="/stellen" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" :title="$t('headers.jobs')" />
   <div class="imageWrapper">
     <img :src="`/data/job/${$route.params.imageName.replace('[', '').replace(']', '')}`" />
   </div>

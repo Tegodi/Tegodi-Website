@@ -1,5 +1,5 @@
 <template>
-  <BackButton back-u-r-l="/" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" title="Stellen" />
+  <BackButton back-u-r-l="/" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" :title="$t('headers.jobs')" />
   <div class="stellenWrapper">
     <div v-if="hasLoaded" class="stellenCards">
       <Card v-for="(job, index) in jobs" :key="index">

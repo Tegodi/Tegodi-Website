@@ -54,6 +54,8 @@
     "more": "Mehr Informationen"
   },
   "headers": {
-    "termine": "Termine"
+    "termine": "Termine",
+    "publication": "Publikationen",
+    "jobs": "Stellen"
   }
 }
