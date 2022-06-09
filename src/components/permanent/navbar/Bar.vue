@@ -3,8 +3,8 @@
     <p>menu</p>
   </div>
   <div class="drawerWrapper" ref="animateDrawerTarget">
-    <p @click="pushTo('stellen')">{{$t('bar.stellen')}}</p>
-    <p @click="pushTo('publikationen')">{{$t('bar.publikationen')}}</p>
+    <p @click="pushTo('stellen')">{{$t('headers.jobs')}}</p>
+    <p @click="pushTo('publikationen')">{{$t('headers.publication')}}</p>
   </div>
 </template>
 

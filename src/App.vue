@@ -119,4 +119,8 @@ export default {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--tegodi-green);
 }
+
+p {
+  hyphens: auto;
+}
 </style>

@@ -18,8 +18,7 @@ export default {
   height: min-content;
   padding: 3vh;
   border-radius: 2vh;
-  box-shadow: 0px 1px 18px 6px rgba(0,0,0,0.49);
-}
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);}
 
 @media screen and (max-width: 1025px) {
   .cardWrapper {

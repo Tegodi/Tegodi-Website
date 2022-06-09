@@ -38,6 +38,7 @@ export default {
   methods: {
     toggleLanguage(lang) {
       this.$root.$i18n.locale = lang;
+      document.documentElement.setAttribute('lang', lang);
     },
     checkLanguage(lang) {
       return this.$root.$i18n.locale === lang;

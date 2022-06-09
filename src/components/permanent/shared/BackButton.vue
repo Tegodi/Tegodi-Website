@@ -67,6 +67,7 @@ export default {
   height: 10vh;
   display: flex;
   flex-direction: row;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
 .backChevron {

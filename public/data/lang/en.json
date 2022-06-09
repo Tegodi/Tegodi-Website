@@ -1,21 +1,26 @@
 {
-  "bar": {
-    "stellen": "Open positions",
-    "publikationen": "Publications"
-  },
   "landing": {
-    "project": "Project Structure",
-    "parts": "Parts",
+    "project": "Projektaufbau",
+    "parts": "Teilaufbau",
     "helpdesk": "Helpdesk",
     "moopaed": "moopaed",
-    "learning": "self-study material"
+    "learning": "Selbstlernmaterial"
   },
   "helpdesk": {
     "contact": {
       "person": "Ansprechpartner",
-      "reference": "Reference",
-      "message": "Message",
-      "submit": "Submit"
+      "address": "Adresse",
+      "phone": "Telefon",
+      "mail": "E-Mail",
+      "reference": "Betreff",
+      "message": "Nachricht",
+      "submit": "Absenden",
+      "firstText": "Der TEgoDi-Helpdesk für Studierende ist eine zentrale Online-Informationsplattform zur Unterstützung der Planung und Durchführung (digitaler) Medienprojekte. Er ist als offener Moopaed-Kurs konzipiert und kann von allen Personen mit Zugang zur Lernplattform der PH Weingarten genutzt werden.",
+      "partHeader": "In den vier Unterbereichen",
+      "parts": ["News und Termine", "Entscheidungshilfen", "Ansprechpartner", "Austausch und Vernetzung"],
+      "partBottom": "finden sich neben zahlreichen Informationen zu verschiedenen Aspekten des digitalen Lehren und Lernens auch eine interaktive Entscheidungshilfe sowie eine kuratierte Linkliste, die interessierte Studierenden von der Ideenfindung über die Organisation bis hin zur medialen Realisierung bei sämtlichen Schritten der Projektumsetzung unterstützen. Außerdem besteht die Möglichkeit sich bei konkreten Fragen oder individuellem Beratungsbedarf direkt über den TEgoDi-Helpdesk an das Team der Lernbegleitung zu wenden oder sich mit anderen Studierenden auszutauschen und zu vernetzen.",
+      "partEnd": "Sollten Sie Interesse haben, ein Medienprojekt im Rahmen Ihres Studiums umzusetzen, schauen Sie am besten gleich vorbei. Und falls Sie Zweifel haben, ob Sie dieser Aufgabe gewachsen sind… keine Angst, der TEgoDi-Helpdesk und das Team der Lernbegleitung werden dabei bedarfsorientiert unterstützen.",
+      "contactFieldText": "Bei individuellen Fragen und Problemen rund um die Durchführung Ihrer Lehr- beziehungsweise Medienentwicklungsprojekte steht Ihnen das Team der Lernbegleitung gerne beratend zur Seite. Um eine qualitative und effiziente Beratung zu erleichtern, spezifizieren Sie bei der Kontaktaufnahme bitte Ihre konkrete Frage- oder Problemstellung so gut wie möglich."
     }
   },
   "project": {
@@ -36,15 +41,17 @@
     }
   },
   "footer": {
-    "imprint": "Imprint",
-    "data": "Privacy",
-    "de": "German",
-    "en": "Englisch"
+    "imprint": "Impressum",
+    "data": "Datenschutz",
+    "de": "Deutsch",
+    "en": "English"
   },
   "stellen": {
-    "more": "More Information"
+    "more": "Mehr Informationen"
   },
   "headers": {
-    "termine": "Events"
-}
+    "termine": "Termine",
+    "publication": "Publication",
+    "jobs": "Open positions"
+  }
 }
