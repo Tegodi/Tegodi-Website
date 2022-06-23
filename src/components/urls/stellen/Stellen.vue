@@ -57,5 +57,6 @@ export default {
   display: inline-flex;
   justify-content: center;
   grid-gap: 1ch;
+  cursor: pointer;
 }
 </style>

@@ -3,10 +3,10 @@
   <div class="pubWrapper">
     <div v-if="hasLoaded" class="pubCards">
       <Card v-for="(info, i) in dataString" :info="info" :key="i">
-        <p>{{info.author}} ({{info.jahr}}). {{info.base}}
-          <span style="font-style: italic">{{info.title}}.</span>
-          {{info.release}}
-        </p>
+          <p>{{info.author}} ({{info.jahr}}). {{info.base}}
+            <span style="font-style: italic">{{info.title}}.</span>
+            {{info.release}}
+          </p>
       </Card>
     </div>
   </div>

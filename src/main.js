@@ -11,8 +11,6 @@ const createVue = async () => {
   const enf = await fetch('/data/lang/en.json');
   const en = await enf.json();
 
-  console.log(de, en);
-
   const i18n = createI18n({
     locale: 'de',
     fallbackLocale: 'de',
@@ -21,11 +19,11 @@ const createVue = async () => {
       en,
     },
   });
-
-  createApp(App)
+  const app = createApp(App)
     .use(router)
-    .use(i18n)
-    .mount('#app');
+    .use(i18n);
+
+  app.mount('#app');
 };
 
 createVue();

@@ -33,6 +33,7 @@
         <rect fill="white" height="1200" width="1200"/>
         <rect id="crop 1" fill="url(#pattern0)" height="1200" width="1200"/>
         <circle id="k1" class="svgcircles" cx="685" cy="257" fill="#000000" opacity="0" r="113" @click="openModalWithData(1)"/>
+        <image class="svgimg" href="hoverstern.png" x="740" y="130" />
         <circle id="k2" class="svgcircles" cx="934" cy="440" fill="#000000" opacity="0" r="113" @click="openModalWithData(2)"/>
         <circle id="k3" class="svgcircles" cx="931" cy="756" fill="#000000" opacity="0" r="113" @click="openModalWithData(3)"/>
         <circle id="k4" class="svgcircles" cx="676" cy="959" fill="#000000" opacity="0" r="113" @click="openModalWithData(4)"/>
@@ -133,6 +134,30 @@ export default {
 </script>
 
 <style scoped>
+.svgimg {
+  height: 75px;
+  width: 75px;
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: 5;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .svgWrapper {
   margin-top: 15vh;
   width: 100%;

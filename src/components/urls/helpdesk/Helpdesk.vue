@@ -28,7 +28,7 @@
         </div>
         <p>{{ $t('helpdesk.contact.partEnd') }}</p>
       </VerticalField>
-      <!--VideoComponent /-->
+      <VideoComponent />
       <ContactField />
     </div>
   </div>
@@ -37,7 +37,7 @@
 <script>
 import VerticalField from '../../permanent/shared/VerticalField.vue';
 import BackButton from '../../permanent/shared/BackButton.vue';
-// import VideoComponent from './components/VideoComponent.vue';
+import VideoComponent from './components/VideoComponent.vue';
 import ContactField from './components/ContactField.vue';
 
 import swoosh from '../../../assets/goswoosh_green.png';
@@ -45,7 +45,7 @@ import swoosh from '../../../assets/goswoosh_green.png';
 export default {
   name: 'Helpdesk',
   components: {
-    ContactField, BackButton, VerticalField,
+    ContactField, BackButton, VerticalField, VideoComponent,
   },
   data() {
     return {
