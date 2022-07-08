@@ -121,7 +121,7 @@ export default {
   }
   .griddify {
     grid-template-columns: auto auto;
-    grid-template-rows: 3ch 7ch 3ch 3ch;
+    grid-template-rows: 7ch 7ch 3ch 3ch;
   }
   .contactFieldWrapper > div {
     width: 100%;

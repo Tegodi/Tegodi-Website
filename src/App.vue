@@ -14,16 +14,6 @@ export default {
     Footer,
     TerminDrawer,
   },
-  methods: {
-    async fetchData() {
-      const f = await fetch('/termine.json');
-      const j = await f.json();
-      console.log(j);
-    },
-  },
-  mounted() {
-    this.fetchData();
-  },
 };
 </script>
 

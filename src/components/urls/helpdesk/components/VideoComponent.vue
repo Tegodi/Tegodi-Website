@@ -1,7 +1,7 @@
 <template>
   <div class="videoComponentWrapper">
     <img :src="desk" class="image"/>
-    <img :src="logo" />
+    <img :src="logo" class="image"/>
   </div>
 </template>
 
@@ -38,13 +38,13 @@ export default {
 @media screen and (max-width: 1025px) {
   .videoComponentWrapper {
     width: 100%;
-    height: 80vh;
+    height: 40vh;
     margin: 0;
     flex-direction: column;
   }
   .image {
-    height: 80%;
-    width: auto;
+    height: auto;
+    width: 80%;
   }
 }
 </style>

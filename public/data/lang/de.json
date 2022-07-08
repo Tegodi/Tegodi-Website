@@ -3,7 +3,8 @@
     "project": "Projektaufbau",
     "parts": "Teilaufbau",
     "helpdesk": "Helpdesk",
-    "moopaed": "moopaed",
+    "moopaed": "moopaed Studierende",
+    "moopaed_lehr": "moopaed Lehrende",
     "learning": "Selbstlernmaterial"
   },
   "helpdesk": {
@@ -53,5 +54,21 @@
     "termine": "Termine",
     "publication": "Publikationen",
     "jobs": "Stellen"
+  },
+  "actualImprint": {
+    "pre": "Anbieter und somit verantwortlich für die kommerzielle und geschäftsmäßige Website im Sinne des § 5 des Telemediengesetz (TMG) in Funktion als Kerngesetz des Elektronischer-Geschäftsverkehr-Vereinheitlichungsgesetz ElGVG und des Gesetz zur Regelung der Rahmenbedingungen für Informations- und Kommunikationsdienste (IuKDG), ist die Pädagogische Hochschule Weingarten, vertreten durch die Rektorin Prof. Dr. Karin Schweizer.",
+    "presence": "Diese Internetpräsenz ist ein Informationsangebot der",
+    "address": "<p>Pädagogische Hochschule Weingarten<br>Kirchplatz 2<br>88250 Weingarten<br>Deutschland\n</p>",
+    "mail": "<p>E-Mail: <a href=\"mailto:info@ph-weingarten.de\">info(at)ph-weingarten.de</a><br>Web: <a href=\"http://www.ph-weingarten.de\" target=\"_blank\">www.ph-weingarten.de</a></p>",
+    "phone": "<p>Telefon: +49 751 501 - 0 <br>Telefax: +49 751 501 - 8250\n</p>",
+    "sitz": "<p>Sitz der Pädagogische Hochschule Weingarten: 88250 Weingarten,&nbsp;Deutschland<br>Zuständiges Amtsgericht: Amtsgericht Ravensburg <br>Rechtsform: Körperschaft des öffentlichen Rechts (KdöR)\n</p>",
+    "law": "Anwendbares Recht: Recht der Bundesrepublik Deutschland (BRD)\n\n",
+    "fin": "<p>Finanzamt Ravensburg <br>Umsatzsteuer-Identifikationsnummer: DE 814 218 256\n</p>",
+    "rektor": "Vertretungsberechtigte Rektorin: Prof. Dr. Karin Schweizer\n\n",
+    "content": "<p><b>Inhaltlich verantwortlich für journalistisch redaktionelle Beiträge:</b><br>Arne Geertz (Referent für Öffentlichkeitsarbeit und Marketing)<br>Pädagogische Hochschule Weingarten<br>Kirchplatz 2<br>88250 Weingarten<br>Deutschland<br>Tel.: +49(0)751/501-8860<br>E-Mail: <a href=\"mailto:geertz@vw.ph-weingarten.de\">geertz(at)vw.ph-weingarten.de</a></p>",
+    "agency": "<p><b>Zuständige Zulassungs- und Aufsichtsbehörde: </b><br>Ministerium für Wissenschaft, Forschung und Kunst Baden-Württemberg (MWK)<br>Königstraße 46<br>70173 Stuttgart<br>Deutschland\n</p>",
+    "gdpr": "<p><b>Externer Datenschutzbeauftragter gemäß Art. 37 EU-DSGVO: <br></b>Maximilian Musch (Datenschutzbeauftragter)<br>Deutsche Datenschutzkanzlei<br>Richard-Wagner-Straße 2<br>88094 Oberteuringen<br>Deutschland<br>Tel: +49(0)7542/949-2100<br>E-Mail: <a href=\"mailto:anfragen@ddsk.de\">anfragen(at)ddsk.de</a></p>",
+    "cp": "<p><b>© Copyright</b><br>Alle Rechte vorbehalten. Text, Bilder und Grafiken sowie deren Anordnung auf der Website unterliegen dem Schutz des Urheberrechts und anderer Schutzgesetze. Der Inhalt dieser Websites darf nicht zu kommerziellen Zwecken kopiert, verbreitet, verändert oder Dritten zugänglich gemacht werden. \n</p>",
+    "cpImage": "<p><b>© Copyright Bildquellen</b><br>Pädagogische Hochschule Weingarten</p>"
   }
 }
