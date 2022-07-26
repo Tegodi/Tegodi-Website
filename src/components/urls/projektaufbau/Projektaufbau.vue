@@ -14,7 +14,7 @@
             <img :src="pt[nowActive - 1]"/>
           </div>
           <div class="textDiv">
-            <p>AP{{nowActive}}</p>
+            <p>{{ $t(`project.missionStatement.apTitles[${nowActive - 1}]`) }}</p>
             <p class="scrollableTextDiv">{{$t(`project.missionStatement.ap${nowActive}`)}}</p>
           </div>
           <div class="chevron chevronRight" @click="switchCurrent(1)">
@@ -58,7 +58,7 @@
         <p>{{ $t('project.vision.first') }}</p>
         <p>{{ $t('project.vision.second') }}</p>
       </VerticalField>
-      <iframe src="https://prezi.com/p/embed/6gra9zrhuhyh/"
+      <iframe src="https://prezi.com/view/cNXBCg8b4w0UwpdXSgwC/"
               id="iframe_container"
               frameborder="0"
               webkitallowfullscreen=""

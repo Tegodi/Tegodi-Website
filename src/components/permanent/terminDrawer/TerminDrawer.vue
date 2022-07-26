@@ -30,7 +30,9 @@ export default {
     };
   },
   async mounted() {
-    const f = await fetch('/termine.json');
+    const f = await fetch('/termine.json', {
+      cache: 'no-cache',
+    });
     this.termine = await f.json();
   },
   methods: {

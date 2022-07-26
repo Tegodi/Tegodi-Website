@@ -2,21 +2,20 @@
   <div class="impressumWrapper">
     <BackButton back-u-r-l="/" chevron-background="var(--light-background)" chevron-color="var(--tegodi-green)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" :title="$t('footer.imprint')" />
     <div class="impressumTexts">
-      <p>{{$t('actualImprint.pre')}}</p>
+      <p class="mb">{{$t('actualImprint.pre')}}</p>
       <p>{{$t('actualImprint.presence')}}</p>
-      <p v-html="$t('actualImprint.address')"/>
-      <p v-html="$t('actualImprint.mail')"/>
-      <p v-html="$t('actualImprint.phone')"/>
-      <p v-html="$t('actualImprint.sitz')"/>
-      <p v-html="$t('actualImprint.law')"/>
-      <p v-html="$t('actualImprint.fin')"/>
-      <p>{{$t('actualImprint.rektor')}}</p>
-      <p v-html="$t('actualImprint.content')"/>
-      <p v-html="$t('actualImprint.agency')"/>
-      <p v-html="$t('actualImprint.gdpr')"/>
-      <p v-html="$t('actualImprint.cp')"/>
-      <p v-html="$t('actualImprint.cpImage')"/>
-
+      <p>{{$t('actualImprint.address')}}</p>
+      <p>{{$t('actualImprint.mail')}}</p>
+      <p class="mb">{{$t('actualImprint.phone')}}</p>
+      <p>{{$t('actualImprint.sitz')}}</p>
+      <p class="mb">{{$t('actualImprint.law')}}</p>
+      <p class="mb">{{$t('actualImprint.fin')}}</p>
+      <p class="mb">{{$t('actualImprint.rektor')}}</p>
+      <p class="mb">{{$t('actualImprint.content')}}</p>
+      <p class="mb">{{$t('actualImprint.agency')}}</p>
+      <p class="mb">{{$t('actualImprint.gdpr')}}</p>
+      <p>{{$t('actualImprint.cp')}}</p>
+      <p style="margin-bottom: 10vh">{{$t('actualImprint.cpImage')}}</p>
     </div>
   </div>
 </template>
@@ -43,5 +42,14 @@ export default {
 .impressumTexts {
   width: 50%;
   height: auto;
+}
+
+.impressumTexts > p {
+  font-family: "Opensans", serif;
+  font-weight: 100;
+}
+
+.mb {
+  margin-bottom: 1ch;
 }
 </style>

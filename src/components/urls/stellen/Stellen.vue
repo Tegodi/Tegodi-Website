@@ -26,7 +26,9 @@ export default {
     };
   },
   async beforeMount() {
-    const f = await fetch('/data/job/jobs.json');
+    const f = await fetch('/data/job/jobs.json', {
+      cache: 'no-cache',
+    });
     this.jobs = await f.json();
     this.hasLoaded = true;
   },

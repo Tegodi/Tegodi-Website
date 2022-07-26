@@ -2,7 +2,7 @@
   <BackButton :back-u-r-l="null" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" :title="$t('headers.publication')" />
   <div class="pubWrapper">
     <div v-if="hasLoaded" class="pubCards">
-      <Card v-for="(info, i) in dataString" :info="info" :key="i">
+      <Card v-for="(info, i) in dataString" :info="info" :key="i" @click="moveTo(info.link)">
           <p>{{info.author}} ({{info.jahr}}). {{info.base}}
             <span style="font-style: italic">{{info.title}}.</span>
             {{info.release}}
@@ -26,9 +26,16 @@ export default {
     };
   },
   async beforeMount() {
-    const f = await fetch('/data/pub/publications.json');
+    const f = await fetch('/data/pub/publications.json', {
+      cache: 'no-cache',
+    });
     this.dataString = await f.json();
     this.hasLoaded = true;
+  },
+  methods: {
+    moveTo(url) {
+
+    },
   },
 };
 </script>

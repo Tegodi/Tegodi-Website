@@ -5,10 +5,14 @@ import App from './App.vue';
 import router from './router';
 
 const createVue = async () => {
-  const def = await fetch('/data/lang/de.json');
-  const de = await def.json();
+  const def = await fetch('/data/lang/de.json', {
+    cache: 'no-cache',
+  });
+  const enf = await fetch('/data/lang/en.json', {
+    cache: 'no-cache',
+  });
 
-  const enf = await fetch('/data/lang/en.json');
+  const de = await def.json();
   const en = await enf.json();
 
   const i18n = createI18n({
