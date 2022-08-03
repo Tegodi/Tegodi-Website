@@ -1,7 +1,11 @@
 <template>
   <BackButton back-u-r-l="/stellen" chevron-background="#D1E040" chevron-color="var(--header-text-color)" text-background="var(--header-text-color)" text-color="var(--tegodi-green)" :title="$t('headers.jobs')" />
   <div class="imageWrapper">
-    <img :src="`/data/job/${$route.params.imageName.replace('[', '').replace(']', '')}`" />
+    <object :data="`/data/job/${$route.params.imageName.replace('[', '').replace(']', '')}`" width="100%" height="100%">
+      <div class="center">
+        <p class="noPdf">Dieser Browser unterstützt keine eingebetteten PDFs.<a :href="`/data/job/${$route.params.imageName.replace('[', '').replace(']', '')}`" download>Das Dokument steht Ihnen hier zur Verfügung</a></p>
+      </div>
+    </object>
   </div>
 </template>
 
@@ -15,16 +19,34 @@ export default {
 </script>
 
 <style scoped>
-.imageWrapper {
+.center {
   width: 100%;
-  min-height: 80vh;
+  height: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.imageWrapper {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noPdf {
+  display: inline-flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Volte", serif;
+  grid-gap: 1ch;
+}
+
+.noPdf > a {
+  color: var(--tegodi-green);
 }
 </style>

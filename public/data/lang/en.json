@@ -44,15 +44,15 @@
   },
   "footer": {
     "imprint": "Imprint",
-    "data": "Datenschutz",
+    "data": "Privacy",
     "de": "Deutsch",
     "en": "English"
   },
   "stellen": {
-    "more": "Mehr Informationen"
+    "more": "More Information"
   },
   "headers": {
-    "termine": "Termine",
+    "termine": "Events",
     "publication": "Publication",
     "jobs": "Open positions"
   }

@@ -1,8 +1,14 @@
 [
   {
+    "title": "Studentische Hilfskraft",
+    "gender": "M/W/D",
+    "bereich": "TEgoDi/ CoLiLab",
+    "details": "stelle1[.]pdf"
+  },
+  {
     "title": "Studentische oder Wissenschaftliche Hilfskraft",
     "gender": "M/W/D",
-    "bereich": "Evaluation",
-    "details": "stelle1[.]png"
+    "bereich": "Online-Self-Assessment & wissenschafliche Begleitforschung",
+    "details": "stelle2[.]pdf"
   }
 ]

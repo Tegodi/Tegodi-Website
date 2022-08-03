@@ -58,14 +58,22 @@
         <p>{{ $t('project.vision.first') }}</p>
         <p>{{ $t('project.vision.second') }}</p>
       </VerticalField>
-      <iframe src="https://prezi.com/view/cNXBCg8b4w0UwpdXSgwC/"
+      <!--iframe src="https://prezi.com/view/cNXBCg8b4w0UwpdXSgwC/"
               id="iframe_container"
               frameborder="0"
               webkitallowfullscreen=""
               mozallowfullscreen=""
               allowfullscreen=""
               allow="autoplay; fullscreen">
-      </iframe>
+      </iframe-->
+      <iframe src="https://prezi.com/p/embed/ujj8tgtd4p1f/"
+              id="iframe_container"
+              frameborder="0"
+              webkitallowfullscreen=""
+              mozallowfullscreen=""
+              allowfullscreen=""
+              allow="autoplay; fullscreen"
+      ></iframe>
     </div>
     <div class="spacer"></div>
   </div>
