@@ -1,0 +1,59 @@
+{
+  "landing": {
+    "project": "Project structure",
+    "parts": "Teilaufbau",
+    "helpdesk": "Helpdesk",
+    "moopaed": "moopaed",
+    "moopaed_lehr": "moopaed",
+    "learning": "Selbstlernmaterial"
+  },
+  "helpdesk": {
+    "contact": {
+      "person": "Contact Person",
+      "address": "Address",
+      "phone": "Phone",
+      "mail": "E-Mail",
+      "reference": "Subject",
+      "message": "Message",
+      "submit": "Submit",
+      "firstText": "It is designed as an open “Moopaed” course and can be used by anyone with access to the University of Education Weingarten learning platform.",
+      "partHeader": "In the four subsections",
+      "parts": ["News and dates", "Decision support", "Contact persons", "Exchange and networking"],
+      "partBottom": "offers a wealth of information on various aspects of digital teaching and learning, as well as an interactive decision-making tool and a curated list of links that support interested students in all steps of project implementation, from brainstorming and organization to media implementation. In addition, it is possible to contact the TTEgoDi student support team directly via the TEgoDi Helpdesk if you have specific questions or need individual advice, or to exchange information and network with other students.",
+      "partEnd": "If you are interested in implementing a media project as part of your studies, it's best to drop by right away. And if you have any doubts about whether you are up to the task... don't worry, the TEgoDi Helpdesk and the TEgoDi student support team will provide support as needed.",
+      "contactFieldText": "If you have any individual questions or problems regarding the implementation of your teaching or media development projects, the TEgoDi student support team will be happy to advise you. To facilitate qualitative and efficient consulting, please specify your specific question or problem as well as possible when contacting us."
+    }
+  },
+  "project": {
+    "vision": {
+      "header": "Vision",
+      "first": "The goal of the \"Teacher Education goes Digital\" (TEgoDi) project is to develop and implement a concept for scientifically established and research-based teaching of digitization-related competencies for student teachers, teaching staff and university lecturers.",
+      "second": "The specific structure of the University of Education Weingarten is used to develop and implement an interdisciplinary concept for the promotion of media pedagogical as well as media didactical and media subject didactical competences of university teachers and students. The focus is on media-supported teaching and learning opportunities in school lessons. In the future, teaching students will be required to carry out two projects during their studies that are linked to subject didactics and/or educational science. Students are free to choose the subject context. One of the projects will focus on the use of electronic media in self-developed teaching-learning settings, and the other will focus on the independent development of digitally supported teaching or learning materials. To ensure that student projects can be carried out successfully, the University of Education Weingarten also provides the necessary organizational and technical infrastructures and creates support services, such as self-study material, tutorials, and feedback mechanisms for students' self-managed development."
+    },
+    "missionStatement": {
+      "header": "Mission Statement",
+      "ap1": "Achieving the goals with system and not losing sight of quality: Project management provides the organizational framework and assists with iterative structures within the project framework. Dissemination and continuous communication with the funding body are important complementary responsibilities.",
+      "ap2": "Determine requirements - continuously optimize implementation - evaluate success! The accompanying scientific research uses a mixed-methods approach to generate scientific and practice-relevant findings in order to best promote a needs-oriented design and implementation of the support services. It is also intended to ensure acceptance, impact and post-use potential. These activities enable a joint learning process, highlight conditions for success and challenges, and make well-founded recommendations for action for transfer and sustainability.",
+      "ap3": "The competence grid offers students and teachers a comprehensive orientation framework with regard to media pedagogical, media didactical and media subject didactical competences. On this basis, they can move confidently and responsibly in a world shaped by digital media and are able to use digital media systematically to support school (learning) processes in their later professional lives. Through tailored Learning Analytics and automated feedback, learners can determine their current level of competence and track their competence development so that they can continue their education in a targeted manner, building on their existing skills.",
+      "ap4": "Need material to tackle the media projects? Still a little undecided about what managing and theming media projects means? The self-study materials offer students support with regard to the targeted use of many different media formats and cover design issues in development and implementation. The wide-ranging collection of materials is intended to provide orientation for researching and classifying the topics.",
+      "ap5": "Don't be afraid of media projects! True to this motto, various measures are being developed as part of the \"Student Support\" work package to support students in the planning and implementation of such projects. In addition to a central information platform, the use of student learning guides is a mainstay of the multi-part support concept. They provide help and advice on individual questions and problems and are prepared for this demanding task within the framework of a specially developed qualification measure.",
+      "ap6": "Communication on behalf of networking: The bridge offices represent the project as change agents in the two faculties of the University of Education Weingarten and support the curricular connection. The primary goal is to promote the development of a community of practice with regard to contemporary teaching using digital media. For this purpose, enabling spaces for collaboration are created and a consulting and support system is established.",
+      "ap7": "Competent through Use! In order to develop media-related competencies, one should also actively engage with media. For this purpose, the Makerspace of the Weingarten University of Education, the CoLiLab, will be expanded in its capacity and supplemented by additional pillars. Students (& university teachers) can then, for example, borrow media production equipment and edit at home on their usual computers or book a time slot in the CoLiLab and get started on site.",
+      "apTitles": ["1 Project Management & Dissemination", "2 Accompanying scientific research", "3 Competence Grid & Learning Analytics", "4 Self-study Material (Online Materials)", "5 Student Support", "6 Support Structure for University Teachers", "7 Media Laboratories"]
+    }
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "data": "Privacy",
+    "de": "Deutsch",
+    "en": "English"
+  },
+  "stellen": {
+    "more": "More Information"
+  },
+  "headers": {
+    "termine": "Events",
+    "publication": "Publication",
+    "jobs": "Open positions"
+  }
+}
