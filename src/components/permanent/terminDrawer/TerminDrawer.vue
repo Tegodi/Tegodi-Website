@@ -1,5 +1,5 @@
 <template>
-  <div :class="getClasses()" class="terminDrawerWrapper">
+  <div :class="getClasses()" class="terminDrawerWrapper" v-if="termine.length > 0">
     <div class="clickToExpand" @click="toggleDrawer()">
       <ChevronLeftIcon :class="drawerIsIn ? 'rotateIn' : 'rotateOut'" />
     </div>
@@ -30,7 +30,7 @@ export default {
     };
   },
   async mounted() {
-    const f = await fetch('/termine.json', {
+    const f = await fetch('/data/termine/termine.json', {
       cache: 'no-cache',
     });
     this.termine = await f.json();
