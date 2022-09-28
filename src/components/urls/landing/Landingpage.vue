@@ -1,6 +1,6 @@
 <template>
   <div class="landingTop">
-    <img :src="img" class="backgroundImage">
+    <img :src="images[currentActive - 1]" class="backgroundImage">
     <div :style="styleForBackground"></div>
     <div ref="cont1" :style="styleForForeground(1)" @click="dummyClick" @mouseenter="setActive(1)">
       <svg :fill="svgFirst" height="296" width="332" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2_00000173132432743301624340000012314298726338530199_" x="0px" y="0px" viewBox="0 0 114 99.2" style="enable-background:new 0 0 114 99.2;" xml:space="preserve">
@@ -74,7 +74,9 @@
 </template>
 
 <script>
-import img from '../../../assets/homebackground.jpg';
+import nmbOne from '../../../assets/homes/nmbrOne.jpg';
+import nmbTwo from '../../../assets/homes/nmbrTwo.jpg';
+import nmbThree from '../../../assets/homes/nmbrThree.jpg';
 import g from '../../../assets/goswoosh.png';
 import gg from '../../../assets/goswoosh_green.png';
 
@@ -82,7 +84,7 @@ export default {
   name: 'Landingpage',
   data() {
     return {
-      img,
+      images: [nmbOne, nmbTwo, nmbThree],
       g,
       gg,
       currentActive: 2,
