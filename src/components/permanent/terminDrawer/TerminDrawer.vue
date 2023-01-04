@@ -7,8 +7,11 @@
       <div class="innerTermin">
         <h2 style="margin-bottom: 3vh">{{$t('headers.termine')}}</h2>
         <div v-for="(termin, i) in termine" :key="i" class="terminFeld">
-          <p class="terminTitle">{{ termin.termin }}</p>
-          <p>{{ termin.am }}</p>
+          <p class="terminTitle">{{ termin.name }}</p>
+          <p>{{termin.when}}</p>
+          <p>{{termin.where}}</p>
+          <p>{{termin.info}}</p>
+          <p v-html="termin.link"/>
         </div>
       </div>
     </div>
@@ -63,12 +66,36 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  transform: translateX(15.3vw);
+  transform: translateX(96%);
 }
 
 .innerTermin {
+  position: relative;
   padding: 1vh;
   font-family: "Opensans", serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.terminContent::-webkit-scrollbar {
+   width: 12px !important;
+ }
+
+/* Track */
+.terminContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.terminContent::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.terminContent::-webkit-scrollbar-thumb:hover {
+  background: var(--tegodi-green);
 }
 
 .drawIn {
@@ -88,7 +115,7 @@ export default {
 }
 
 .terminFeld {
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 }
 
 .terminTitle {
@@ -98,7 +125,7 @@ export default {
 
 @keyframes animateDateIn {
   from {
-    transform: translateX(15.3vw);
+    transform: translateX(96%);
   }
   to {
     transform: translateX(0);
@@ -110,7 +137,7 @@ export default {
     transform: translateX(0);
   }
   to {
-    transform: translateX(15.3vw);
+    transform: translateX(96%);
   }
 }
 
@@ -144,8 +171,11 @@ export default {
 }
 
 .terminContent {
-  width: 15vw;
-  min-height: 20vh;
+  overflow-y: scroll;
+  position: relative;
+  width: 70vw;
+  min-height: 50vh;
+  max-height: 75vh;
   background: white;
   border-radius: 1vh 0 0 1vh;
   border-left: 3px solid #141414;
